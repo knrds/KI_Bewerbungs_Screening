@@ -1,0 +1,1592 @@
+[
+  {
+    "file_name": "lea_synonym_match.pdf",
+    "candidate_name": "Lea Synonym Match",
+    "parsed_document": {
+      "file_name": "lea_synonym_match.pdf",
+      "text": "Lebenslauf - Lea Synonym Match\nE-Mail: lea.synonym@example.com\nPROFIL\nFull-Stack Engineer mit 5 Jahren Erfahrung in Produktteams. Schwerpunkt auf Python-Services,\nPostgreSQL,\nRESTful API Design, Docker und Frontend-Implementierung mit React.js. Cloud-Projekte wurden\nüberwiegend\nauf Amazon Web Services umgesetzt.\nBERUFSERFAHRUNG\n04/2022 - Heute: Full-Stack Engineer bei ProductLab GmbH\n- Entwicklung von Python Backend Services\n- Aufbau von RESTful API Endpunkten und Integrationen\n- Arbeit mit PostgreSQL und SQL-Datenbanken\n- Deployment via Docker Container auf Amazon Web Services\n- UI-Komponenten mit React.js und TypeScript\n- Versionskontrolle mit Git\nKOMPETENZEN & SKILLS\n- Python, PostgreSQL, RESTful API, React.js, TypeScript\n- Docker, Amazon Web Services, Git\n- Kommunikation, technische Dokumentation",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "api"
+          ]
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "docker",
+            "container"
+          ]
+        },
+        {
+          "term": "React",
+          "found": true,
+          "count": 6,
+          "matched_terms": [
+            "react",
+            "react.js"
+          ]
+        },
+        {
+          "term": "Cloud",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "cloud"
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "kommunikation"
+          ]
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "API",
+        "SQL",
+        "Docker",
+        "React",
+        "Cloud",
+        "Git",
+        "Communication"
+      ],
+      "missing_must_have": [],
+      "missing_nice_to_have": [],
+      "text_length": 811
+    },
+    "score": {
+      "total_score": 89.0,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 40.0,
+          "max_points": 40.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 20.0,
+          "max_points": 20.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 10.0,
+          "max_points": 20.0,
+          "explanation": "2 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 10.0,
+          "max_points": 10.0,
+          "explanation": "5 Jahre Erfahrung erkannt."
+        },
+        {
+          "name": "KI-semantische Bewertung",
+          "points": 9.0,
+          "max_points": 10.0,
+          "explanation": "Strukturierte KI-Einschaetzung, sofern verfuegbar."
+        }
+      ],
+      "recommendation": "Hohe Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score plus optionale KI-Einschaetzung."
+    },
+    "ai_analysis": {
+      "candidate_name": "Lea Synonym Match",
+      "candidate_summary": "Full-Stack Engineerin mit 5 Jahren Erfahrung in Produktteams. Starke Expertise in Python, PostgreSQL, RESTful APIs, Docker, React.js und AWS. Arbeitet eigenverantwortlich und legt Wert auf saubere Dokumentation und strukturierte Zusammenarbeit.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "PostgreSQL",
+          "RESTful API",
+          "React.js",
+          "TypeScript",
+          "Docker",
+          "Amazon Web Services",
+          "Git",
+          "SQL"
+        ],
+        "tools": [
+          "Git",
+          "Docker",
+          "Amazon Web Services",
+          "PostgreSQL",
+          "TypeScript"
+        ],
+        "soft_skills": [
+          "Kommunikation",
+          "technische Dokumentation",
+          "Eigenverantwortung",
+          "strukturierte Zusammenarbeit"
+        ]
+      },
+      "experience_summary": "Seit April 2022 als Full-Stack Engineer bei ProductLab GmbH tätig. Verantwortlich für Python-Backend-Entwicklung, RESTful API-Design, PostgreSQL-Datenbanken, Docker-basiertes Deployment auf AWS sowie Frontend-Entwicklung mit React.js und TypeScript. Nutzt Git für Versionskontrolle und betont technische Dokumentation.",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "API",
+          "SQL"
+        ],
+        "nice_to_have": [
+          "Docker",
+          "React",
+          "Cloud"
+        ],
+        "keywords": [
+          "Git",
+          "Communication"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Keine explizite Erwähnung von Streamlit im Lebenslauf",
+        "Keine direkte Nennung von Project Management als formale Kompetenz"
+      ],
+      "strengths": [
+        "Vollständige Abdeckung aller Muss-Kriterien (Python, API, SQL)",
+        "Alle Wunsch-Kriterien erfüllt (Docker, React, Cloud/AWS)",
+        "Starke Erfahrung mit relevanten Technologien (PostgreSQL, RESTful APIs, AWS)",
+        "Nachweisliche Fähigkeit zur sauberen Dokumentation und strukturierter Kommunikation",
+        "5 Jahre Berufserfahrung in Produktteams – passt zur erwarteten Eigenverantwortung"
+      ],
+      "weaknesses_or_open_questions": [
+        "Streamlit wird nicht genannt – unklar, ob Erfahrung damit vorhanden ist",
+        "Keine explizite Nennung von Projektmanagement-Methoden oder -Tools",
+        "Keine Angabe zur Erfahrung mit Streamlit-basierten Anwendungen"
+      ],
+      "seniority_estimate": "Mid-Level (5 Jahre Erfahrung, eigenverantwortliche Arbeit in Produktteams)",
+      "ai_fit_score": 9,
+      "ai_score_reasoning": "Der Kandidat erfüllt alle Muss- und Wunsch-Kriterien vollständig und bringt umfassende Erfahrung mit den geforderten Technologien mit. Die einzige Lücke ist die fehlende Erwähnung von Streamlit, was jedoch durch die starke Python- und Full-Stack-Kompensation kompensiert werden kann. Die Soft Skills (Kommunikation, Dokumentation) sind explizit genannt und passen zur Stellenausschreibung.",
+      "interview_questions": {
+        "technical": [
+          "Haben Sie bereits mit Streamlit gearbeitet? Falls ja, in welchem Kontext?",
+          "Wie strukturieren Sie typischerweise ein Full-Stack-Projekt mit Python und React?",
+          "Können Sie ein Beispiel für eine gut dokumentierte API nennen, die Sie entwickelt haben?"
+        ],
+        "experience_based": [
+          "Beschreiben Sie ein Projekt, in dem Sie eigenverantwortlich von der Backend-Entwicklung bis zum Deployment verantwortlich waren.",
+          "Wie gehen Sie vor, wenn Sie eine neue API integrieren müssen, deren Dokumentation unvollständig ist?"
+        ],
+        "clarification": [
+          "Warum wird Streamlit in Ihrem Lebenslauf nicht erwähnt, obwohl es ein zentraler Bestandteil der Stelle ist?",
+          "Haben Sie Erfahrung mit agilen Projektmanagement-Methoden oder Tools wie Jira, Trello etc.?"
+        ]
+      },
+      "evidence": [
+        "Python Backend Services entwickelt (Berufserfahrung)",
+        "RESTful API Endpunkte aufgebaut (Berufserfahrung)",
+        "Arbeit mit PostgreSQL und SQL-Datenbanken (Berufserfahrung)",
+        "Deployment via Docker auf AWS (Berufserfahrung)",
+        "UI-Komponenten mit React.js (Berufserfahrung)",
+        "Versionskontrolle mit Git (Berufserfahrung)",
+        "Kommunikation und technische Dokumentation als Kompetenzen gelistet"
+      ],
+      "risk_notes": [
+        "Streamlit fehlt im Profil – könnte auf fehlende Spezialisierung hindeuten",
+        "Keine explizite Nennung von Projektmanagement-Erfahrung"
+      ],
+      "human_review_recommendation": "Empfohlen für Vorstellungsgespräch – hohe technische Passfähigkeit, klärungsbedürftig hinsichtlich Streamlit-Erfahrung"
+    },
+    "metadata": {
+      "used_ai": true,
+      "analysis_mode": "KI-gestützt",
+      "fallback_reason": "",
+      "model": "openrouter/owl-alpha"
+    }
+  },
+  {
+    "file_name": "max_mustermann.pdf",
+    "candidate_name": "Max Mustermann",
+    "parsed_document": {
+      "file_name": "max_mustermann.pdf",
+      "text": "Lebenslauf - Max Mustermann\nAnschrift: Musterstraße 12, 12345 Musterstadt\nE-Mail: max.mustermann@example.com\nTelefon: +49 170 1234567\nPROFIL\nErfahrener Senior Full-Stack Developer mit über 6 Jahren Berufserfahrung (6+ years experience) im\nEntwurf und der Entwicklung komplexer Webanwendungen. Expertise in Python, robusten\nREST-APIs, SQL-Datenbanken und modernen Frontend-Technologien. Starke\nKommunikationsfähigkeiten und Erfahrung in agilen Teams.\nBERUFSERFAHRUNG\n01/2022 - Heute: Senior Full-Stack Entwickler bei Tech Solutions GmbH\n- Entwurf und Entwicklung von Microservices mit Python und FastAPI\n- Design von Datenbankarchitekturen unter Verwendung von SQL (PostgreSQL)\n- Konzeptionierung und Anbindung von sicheren REST APIs\n- Orchestrierung und Bereitstellung mittels Docker in der AWS Cloud (Amazon Web Services)\n- Enge Zusammenarbeit und strukturierte Kommunikation im Scrum-Team\n08/2019 - 12/2021: Softwareentwickler bei SoftDev AG\n- Entwicklung von Webanwendungen unter Verwendung von Python und Django\n- Erstellung von Frontends mit React und TypeScript\n- Verwaltung von Versionskontrolle mit Git\nKOMPETENZEN & SKILLS\n- Sprachen: Python, JavaScript, TypeScript, SQL\n- Frameworks & Tools: React.js, Django, FastAPI, Docker, Git\n- Cloud & Infrastruktur: AWS, REST API, PostgreSQL\n- Soft Skills: Kommunikation, Teamfähigkeit, Agile Methoden",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "api"
+          ]
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "docker"
+          ]
+        },
+        {
+          "term": "React",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "react",
+            "react.js"
+          ]
+        },
+        {
+          "term": "Cloud",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "cloud"
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "kommunikation"
+          ]
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "API",
+        "SQL",
+        "Docker",
+        "React",
+        "Cloud",
+        "Git",
+        "Communication"
+      ],
+      "missing_must_have": [],
+      "missing_nice_to_have": [],
+      "text_length": 1351
+    },
+    "score": {
+      "total_score": 88.0,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 40.0,
+          "max_points": 40.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 20.0,
+          "max_points": 20.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 10.0,
+          "max_points": 20.0,
+          "explanation": "2 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 10.0,
+          "max_points": 10.0,
+          "explanation": "Senioritaetshinweise im Lebenslauf gefunden."
+        },
+        {
+          "name": "KI-semantische Bewertung",
+          "points": 8.0,
+          "max_points": 10.0,
+          "explanation": "Strukturierte KI-Einschaetzung, sofern verfuegbar."
+        }
+      ],
+      "recommendation": "Hohe Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score plus optionale KI-Einschaetzung."
+    },
+    "ai_analysis": {
+      "candidate_name": "Max Mustermann",
+      "candidate_summary": "Senior Full-Stack Developer mit über 6 Jahren Berufserfahrung, spezialisiert auf Python, REST-APIs, SQL und moderne Frontend-Technologien. Bringt umfassende Erfahrung in agilen Teams, strukturierter Kommunikation und sauberer Dokumentation mit.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "REST APIs",
+          "SQL",
+          "PostgreSQL",
+          "FastAPI",
+          "Django",
+          "React",
+          "TypeScript",
+          "JavaScript",
+          "Microservices",
+          "Docker",
+          "AWS",
+          "Agile Methoden",
+          "Scrum"
+        ],
+        "tools": [
+          "Git",
+          "Docker",
+          "FastAPI",
+          "Django",
+          "React.js",
+          "PostgreSQL",
+          "AWS"
+        ],
+        "soft_skills": [
+          "Kommunikation",
+          "Teamfähigkeit",
+          "Strukturierte Kommunikation",
+          "Agile Methoden"
+        ]
+      },
+      "experience_summary": "Über 6 Jahre Berufserfahrung als Full-Stack Entwickler. Aktuell Senior Full-Stack Entwickler bei Tech Solutions GmbH mit Fokus auf Python-Microservices, REST-APIs, SQL-Datenbanken, Docker und AWS Cloud. Zuvor Softwareentwickler bei SoftDev AG mit Schwerpunkt Python/Django und React/TypeScript.",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "API",
+          "SQL"
+        ],
+        "nice_to_have": [
+          "Docker",
+          "React",
+          "Cloud"
+        ],
+        "keywords": [
+          "Git",
+          "Communication"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Streamlit",
+        "Project management"
+      ],
+      "strengths": [
+        "Erfahrung mit Python und FastAPI für API-Entwicklung",
+        "Umfangreiche SQL- und PostgreSQL-Kenntnisse",
+        "Docker- und AWS Cloud-Erfahrung vorhanden",
+        "React-Kenntnisse aus vorheriger Position",
+        "Strukturierte Kommunikation im Scrum-Team nachgewiesen",
+        "Git-Versionskontrolle dokumentiert",
+        "Agile Methoden und Teamarbeit"
+      ],
+      "weaknesses_or_open_questions": [
+        "Keine Erfahrung mit Streamlit erwähnt",
+        "Keine expliziten Project management-Kenntnisse dokumentiert",
+        "Streamlit-Kompetenz muss im Gespräch geklärt werden"
+      ],
+      "seniority_estimate": "Senior",
+      "ai_fit_score": 8,
+      "ai_score_reasoning": "Kandidat erfüllt alle Muss-Kriterien (Python, API, SQL) und Wunsch-Kriterien (Docker, React, Cloud). Keywords Git und Communication sind vorhanden. Einzige Lücken sind Streamlit und Project management, die für ein kleines Full-Stack-Projekt weniger kritisch sein könnten. Hohe Übereinstimmung mit den technischen Anforderungen und nachgewiesene Soft Skills.",
+      "interview_questions": {
+        "technical": [
+          "Haben Sie bereits Erfahrung mit Streamlit oder ähnlichen Python-Dashboard-Frameworks?",
+          "Können Sie ein Projekt beschreiben, bei dem Sie eine REST API von der Konzeption bis zur Implementierung umgesetzt haben?",
+          "Wie gehen Sie bei der Datenbankarchitektur und SQL-Optimierung vor?"
+        ],
+        "experience_based": [
+          "Beschreiben Sie ein Projekt, bei dem Sie Eigenverantwortung übernommen und saubere Dokumentation erstellt haben.",
+          "Wie strukturieren Sie die Kommunikation in agilen Teams?",
+          "Können Sie ein Beispiel nennen, bei dem Sie Docker und Cloud-Services (AWS) eingesetzt haben?"
+        ],
+        "clarification": [
+          "Wie schätzen Sie Ihre Erfahrung mit Streamlit ein, falls vorhanden?",
+          "Haben Sie Erfahrung im Project management oder der Koordination von Projekten?",
+          "Wie gehen Sie mit der Dokumentation von Code und Projekten um?"
+        ]
+      },
+      "evidence": [
+        "Python und FastAPI in aktueller Position eingesetzt",
+        "SQL und PostgreSQL explizit als Kompetenz aufgeführt",
+        "REST APIs in Berufserfahrung dokumentiert",
+        "Docker und AWS Cloud in aktueller Position verwendet",
+        "React und TypeScript in vorheriger Position eingesetzt",
+        "Git als Versionskontrolltool aufgeführt",
+        "Strukturierte Kommunikation im Scrum-Team beschrieben",
+        "Agile Methoden als Soft Skill dokumentiert"
+      ],
+      "risk_notes": [
+        "Streamlit-Erfahrung nicht nachgewiesen - muss im Gespräch geklärt werden",
+        "Project management-Kenntnisse nicht explizit dokumentiert",
+        "Kandidat hat Senior-Level-Erfahrung - könnte für kleines Projekt überqualifiziert sein"
+      ],
+      "human_review_recommendation": "Empfehlung für ein Vorstellgespräch, da der Kandidat die meisten Anforderungen erfüllt und starke technische sowie Soft-Skill-Kenntnisse mitbringt. Streamlit-Erfahrung sollte im Gespräch validiert werden."
+    },
+    "metadata": {
+      "used_ai": true,
+      "analysis_mode": "KI-gestützt",
+      "fallback_reason": "",
+      "model": "openrouter/owl-alpha"
+    }
+  },
+  {
+    "file_name": "erika_musterfrau.pdf",
+    "candidate_name": "Erika Musterfrau",
+    "parsed_document": {
+      "file_name": "erika_musterfrau.pdf",
+      "text": "Lebenslauf - Erika Musterfrau\nAnschrift: Hauptstraße 45, 54321 Stadt\nE-Mail: erika.musterfrau@example.com\nPROFIL\nEngagierte Softwareentwicklerin mit 3 Jahren Berufserfahrung (3 years experience) in der\nBackendentwicklung mit Python und SQL. Fokus auf Datenverarbeitung und\nSchnittstellen-Entwicklung (APIs). Sehr eigenverantwortliche Arbeitsweise und gute\nDokumentationspraxis.\nBERUFSERFAHRUNG\n03/2023 - Heute: Backend-Entwicklerin bei DataCorp GmbH\n- Entwicklung von Datenpipelines in Python\n- Optimierung von SQL-Datenbankabfragen\n- Erstellung von API-Schnittstellen (REST API)\n- Dokumentation technischer Workflows\n01/2021 - 02/2023: Junior Developer bei CodeBase GmbH\n- Unterstützung bei der Entwicklung interner Tools mit Python\n- Pflege von Git-Repositories\n- Schnittstellentests\nKOMPETENZEN & SKILLS\n- Sprachen: Python, SQL, HTML, CSS\n- Frameworks & Tools: Django, Git\n- Sonstiges: REST API, SQL Server\n- Soft Skills: Eigenverantwortung, saubere Dokumentation",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "api"
+          ]
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "API",
+        "SQL",
+        "Git"
+      ],
+      "missing_must_have": [],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 966
+    },
+    "score": {
+      "total_score": 57.0,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 40.0,
+          "max_points": 40.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 5.0,
+          "max_points": 20.0,
+          "explanation": "1 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 6.0,
+          "max_points": 10.0,
+          "explanation": "3 Jahre Erfahrung erkannt."
+        },
+        {
+          "name": "KI-semantische Bewertung",
+          "points": 6.0,
+          "max_points": 10.0,
+          "explanation": "Strukturierte KI-Einschaetzung, sofern verfuegbar."
+        }
+      ],
+      "recommendation": "Manuell pruefen, mehrere offene Punkte",
+      "explanation": "Regelbasierter Score plus optionale KI-Einschaetzung."
+    },
+    "ai_analysis": {
+      "candidate_name": "Erika Musterfrau",
+      "candidate_summary": "Backend-Entwicklerin mit 3 Jahren Berufserfahrung in Python und SQL, Fokus auf Datenverarbeitung und API-Entwicklung. Zeigt Eigenverantwortung und gute Dokumentationspraxis.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "SQL",
+          "REST API",
+          "Django",
+          "HTML",
+          "CSS",
+          "SQL Server"
+        ],
+        "tools": [
+          "Git"
+        ],
+        "soft_skills": [
+          "Eigenverantwortung",
+          "saubere Dokumentation"
+        ]
+      },
+      "experience_summary": "3 Jahre Berufserfahrung in Backend-Entwicklung mit Schwerpunkt auf Python, SQL und API-Entwicklung. Aktuell bei DataCorp GmbH tätig, zuvor Junior Developer bei CodeBase GmbH.",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "API",
+          "SQL"
+        ],
+        "nice_to_have": [],
+        "keywords": [
+          "Git"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Streamlit",
+        "Docker",
+        "React",
+        "Cloud",
+        "Communication",
+        "Project management"
+      ],
+      "strengths": [
+        "Erfahrung in Python und SQL",
+        "API-Entwicklung (REST API)",
+        "Dokumentationspraxis",
+        "Eigenverantwortung"
+      ],
+      "weaknesses_or_open_questions": [
+        "Keine Erfahrung mit Streamlit",
+        "Keine Erfahrung mit Docker, React oder Cloud",
+        "Keine explizite Nennung von Kommunikations- oder Projektmanagement-Erfahrung"
+      ],
+      "seniority_estimate": "Junior to Mid-Level",
+      "ai_fit_score": 6,
+      "ai_score_reasoning": "Kandidat erfüllt alle Muss-Kriterien (Python, API, SQL) und zeigt relevante Soft Skills. Fehlende Wunsch-Kriterien (Docker, React, Cloud) und Keywords (Streamlit, Communication, Project management) mindern die Passung für das Full-Stack-Projekt.",
+      "interview_questions": {
+        "technical": [
+          "Haben Sie bereits mit Streamlit gearbeitet oder würden Sie sich schnell einarbeiten können?",
+          "Wie gehen Sie bei der Entwicklung von APIs vor, insbesondere bei der Dokumentation?",
+          "Können Sie ein Beispiel für eine komplexe SQL-Abfrage nennen, die Sie optimiert haben?"
+        ],
+        "experience_based": [
+          "Beschreiben Sie ein Projekt, in dem Sie eigenverantwortlich gearbeitet haben.",
+          "Wie kommunizieren Sie technische Anforderungen an nicht-technische Stakeholder?",
+          "Haben Sie Erfahrung mit Projektmanagement-Methoden oder -Tools?"
+        ],
+        "clarification": [
+          "Warum interessieren Sie sich für diese Position, obwohl Streamlit nicht in Ihren bisherigen Erfahrungen genannt wird?",
+          "Wie würden Sie sich in ein Projekt mit Docker und Cloud-Technologien einarbeiten?"
+        ]
+      },
+      "evidence": [
+        "Entwicklung von Datenpipelines in Python",
+        "Optimierung von SQL-Datenbankabfragen",
+        "Erstellung von API-Schnittstellen (REST API)",
+        "Dokumentation technischer Workflows",
+        "Pflege von Git-Repositories"
+      ],
+      "risk_notes": [
+        "Keine Erfahrung mit Frontend-Technologien wie React",
+        "Keine Cloud- oder Container-Erfahrung (Docker)",
+        "Streamlit nicht als Skill oder Erfahrung genannt"
+      ],
+      "human_review_recommendation": "Empfehlung zur weiteren Prüfung: Kandidat erfüllt Kernanforderungen, zeigt Lernbereitschaft und relevante Soft Skills. Fehlende Full-Stack-Kompetenzen (Streamlit, React, Cloud) sollten im Gespräch geklärt werden."
+    },
+    "metadata": {
+      "used_ai": true,
+      "analysis_mode": "KI-gestützt",
+      "fallback_reason": "",
+      "model": "openrouter/owl-alpha"
+    }
+  },
+  {
+    "file_name": "nina_data_analyst.pdf",
+    "candidate_name": "Nina Data Analyst",
+    "parsed_document": {
+      "file_name": "nina_data_analyst.pdf",
+      "text": "Lebenslauf - Nina Data Analyst\nE-Mail: nina.data@example.com\nPROFIL\nData Analyst mit 4 Jahren Berufserfahrung in Reporting, Datenmodellierung und Automatisierung.\nSehr sicher in SQL und Python, aber ohne belegte Erfahrung mit REST API Entwicklung oder\nReact.\nBERUFSERFAHRUNG\n07/2021 - Heute: Data Analyst bei Insight Analytics GmbH\n- Datenanalyse und Automatisierung mit Python\n- Aufbau von Dashboards und SQL-Abfragen\n- Datenmodellierung in relationalen Datenbanken\n- Nutzung von Git für Analyse-Skripte\nKOMPETENZEN & SKILLS\n- Python, SQL, Git, Dokumentation\n- Tableau, Excel, Data Warehousing\n- Keine Docker-, React- oder Cloud-Projekterfahrung im Lebenslauf gefunden",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "SQL",
+        "Git"
+      ],
+      "missing_must_have": [
+        "API"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 669
+    },
+    "score": {
+      "total_score": 41.7,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 26.7,
+          "max_points": 40.0,
+          "explanation": "2 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 5.0,
+          "max_points": 20.0,
+          "explanation": "1 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 6.0,
+          "max_points": 10.0,
+          "explanation": "4 Jahre Erfahrung erkannt."
+        },
+        {
+          "name": "KI-semantische Bewertung",
+          "points": 4.0,
+          "max_points": 10.0,
+          "explanation": "Strukturierte KI-Einschaetzung, sofern verfuegbar."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score plus optionale KI-Einschaetzung."
+    },
+    "ai_analysis": {
+      "candidate_name": "Nina Data Analyst",
+      "candidate_summary": "Data Analyst mit 4 Jahren Berufserfahrung in Reporting, Datenmodellierung und Automatisierung. Sicher in Python und SQL, mit Erfahrung in Git und Dokumentation. Keine nachweisliche Erfahrung mit REST API Entwicklung, React, Docker oder Cloud.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "SQL",
+          "Datenmodellierung",
+          "Datenanalyse",
+          "Automatisierung",
+          "Data Warehousing"
+        ],
+        "tools": [
+          "Git",
+          "Tableau",
+          "Excel"
+        ],
+        "soft_skills": [
+          "Dokumentation"
+        ]
+      },
+      "experience_summary": "4 Jahre als Data Analyst bei Insight Analytics GmbH mit Fokus auf Datenanalyse, Automatisierung mit Python, SQL-Abfragen, Datenmodellierung und Dashboard-Erstellung. Nutzung von Git für Versionskontrolle von Analyse-Skripten.",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "SQL"
+        ],
+        "nice_to_have": [],
+        "keywords": [
+          "Git"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Keine belegte Erfahrung mit REST API Entwicklung",
+        "Keine Erfahrung mit Streamlit",
+        "Keine Erfahrung mit React",
+        "Keine Erfahrung mit Docker",
+        "Keine Cloud-Erfahrung",
+        "Keine Erfahrung mit Projektmanagement",
+        "Strukturierte Kommunikation nicht explizit belegt"
+      ],
+      "strengths": [
+        "Solide Erfahrung in Python und SQL",
+        "Erfahrung mit Datenmodellierung und Automatisierung",
+        "Nutzung von Git für Versionskontrolle",
+        "Bereitschaft zur Dokumentation",
+        "4 Jahre Berufserfahrung im Datenbereich"
+      ],
+      "weaknesses_or_open_questions": [
+        "Keine nachweisliche Erfahrung mit API-Entwicklung oder -Integration",
+        "Streamlit-Erfahrung fehlt vollständig",
+        "Keine Frontend-Erfahrung (React)",
+        "Keine DevOps-Erfahrung (Docker, Cloud)",
+        "Projektmanagement-Kompetenzen nicht dokumentiert",
+        "Kommunikationsfähigkeiten nicht konkret belegt"
+      ],
+      "seniority_estimate": "Mid-Level (4 Jahre Erfahrung, aber nicht alle geforderten Kompetenzen vorhanden)",
+      "ai_fit_score": 4,
+      "ai_score_reasoning": "Kandidat erfüllt 2 der 3 Muss-Kriterien (Python, SQL) und 1 der geforderten Keywords (Git). Fehlende Kernkompetenzen wie API-Erfahrung, Streamlit, React, Docker und Cloud reduzieren die Passung erheblich. Die Data-Analyst-Erfahrung ist relevant, aber nicht direkt auf Full-Stack-Entwicklung übertragbar.",
+      "interview_questions": {
+        "technical": [
+          "Haben Sie bereits mit REST APIs gearbeitet, auch wenn nicht explizit im Lebenslauf erwähnt?",
+          "Wie würden Sie eine Streamlit-Anwendung strukturieren?",
+          "Haben Sie Erfahrung mit der Integration von APIs in Python-Anwendungen?"
+        ],
+        "experience_based": [
+          "Beschreiben Sie ein Projekt, bei dem Sie Eigenverantwortung übernommen haben.",
+          "Wie dokumentieren Sie Ihre Projekte und Analysen?",
+          "Wie kommunizieren Sie komplexe Datenanalysen an nicht-technische Stakeholder?"
+        ],
+        "clarification": [
+          "Warum möchten Sie von Data Analyst zu Full-Stack-Entwicklung wechseln?",
+          "Wie schnell können Sie sich in neue Technologien wie Streamlit und React einarbeiten?",
+          "Haben Sie private Projekte oder Weiterbildungen im Full-Stack-Bereich?"
+        ]
+      },
+      "evidence": [
+        "Python und SQL explizit als Kompetenzen aufgeführt",
+        "Git-Nutzung in der Berufserfahrung erwähnt",
+        "Dokumentation als Skill gelistet",
+        "4 Jahre Berufserfahrung im Datenbereich"
+      ],
+      "risk_notes": [
+        "Keine nachweisliche Erfahrung mit API-Entwicklung",
+        "Streamlit fehlt komplett im Profil",
+        "Keine Frontend- oder Cloud-Erfahrung",
+        "Wechsel von Data Analyst zu Full-Stack könnte steile Lernkurve erfordern"
+      ],
+      "human_review_recommendation": "Empfehlung für persönliches Gespräch, um Lernbereitschaft und Transferierbarkeit der Data-Analyst-Erfahrung zu prüfen. Kandidat könnte mit geeigneter Einarbeitung passen, wenn hohe Eigenverantwortung und Lernfähigkeit vorhanden sind."
+    },
+    "metadata": {
+      "used_ai": true,
+      "analysis_mode": "KI-gestützt",
+      "fallback_reason": "",
+      "model": "openrouter/owl-alpha"
+    }
+  },
+  {
+    "file_name": "otto_manager_profile.pdf",
+    "candidate_name": "Otto Manager",
+    "parsed_document": {
+      "file_name": "otto_manager_profile.pdf",
+      "text": "Lebenslauf - Otto Manager Profile\nE-Mail: otto.manager@example.com\nPROFIL\nProjektleiter und Delivery Manager mit 10+ Jahren Berufserfahrung in Softwareprojekten. Sehr stark\nin\nKommunikation, Stakeholder-Management, Budgetplanung und Projektmanagement. Keine aktuelle\nHands-on\nEntwicklung im Tagesgeschäft.\nBERUFSERFAHRUNG\n01/2018 - Heute: IT-Projektleiter bei Enterprise Solutions AG\n- Steuerung agiler Teams und externer Dienstleister\n- Projektmanagement, Risikomanagement und Reporting\n- Moderation von Scrum Events\n- Abstimmung technischer Architekturentscheidungen mit Entwicklungsteams\nKOMPETENZEN & SKILLS\n- Projektmanagement, Scrum, Kommunikation, Dokumentation\n- Grundverständnis Cloud-Transformation\n- Keine belegte Praxis in Python, SQL, API-Implementierung oder Docker",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "cloud"
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Communication",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "kommunikation"
+          ]
+        },
+        {
+          "term": "Project management",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "projektmanagement"
+          ]
+        }
+      ],
+      "detected_skills": [
+        "Cloud",
+        "Communication",
+        "Project management"
+      ],
+      "missing_must_have": [
+        "Python",
+        "API",
+        "SQL"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React"
+      ],
+      "text_length": 779
+    },
+    "score": {
+      "total_score": 28.7,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 0.0,
+          "max_points": 40.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 6.7,
+          "max_points": 20.0,
+          "explanation": "1 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 10.0,
+          "max_points": 20.0,
+          "explanation": "2 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 10.0,
+          "max_points": 10.0,
+          "explanation": "10 Jahre Erfahrung erkannt."
+        },
+        {
+          "name": "KI-semantische Bewertung",
+          "points": 2.0,
+          "max_points": 10.0,
+          "explanation": "Strukturierte KI-Einschaetzung, sofern verfuegbar."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score plus optionale KI-Einschaetzung."
+    },
+    "ai_analysis": {
+      "candidate_name": "Otto Manager",
+      "candidate_summary": "Projektleiter und Delivery Manager mit über 10 Jahren Erfahrung in Softwareprojekten. Starke Fähigkeiten in Kommunikation, Stakeholder-Management und Projektmanagement. Keine aktuelle praktische Entwicklungserfahrung in den geforderten technischen Kernkompetenzen.",
+      "detected_skills": {
+        "technical": [],
+        "tools": [],
+        "soft_skills": [
+          "Kommunikation",
+          "Projektmanagement",
+          "Stakeholder-Management",
+          "Dokumentation",
+          "Scrum",
+          "Risikomanagement",
+          "Reporting"
+        ]
+      },
+      "experience_summary": "Über 10 Jahre Erfahrung als IT-Projektleiter in Softwareprojekten. Verantwortlich für Steuerung agiler Teams, externe Dienstleister, Projektmanagement, Risikomanagement, Reporting und Moderation von Scrum Events. Abstimmung technischer Architekturentscheidungen mit Entwicklungsteams, aber keine aktuelle Hands-on-Entwicklung.",
+      "matched_requirements": {
+        "must_have": [],
+        "nice_to_have": [
+          "Cloud"
+        ],
+        "keywords": [
+          "Communication",
+          "Project management"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Python",
+        "API",
+        "SQL",
+        "Streamlit",
+        "Git",
+        "Docker",
+        "React"
+      ],
+      "strengths": [
+        "Starke Kommunikationsfähigkeiten",
+        "Umfangreiche Erfahrung in Projektmanagement und agilen Methoden",
+        "Erfahrung in Stakeholder-Management und Dokumentation",
+        "Grundverständnis von Cloud-Transformation"
+      ],
+      "weaknesses_or_open_questions": [
+        "Keine nachgewiesene praktische Erfahrung in Python, SQL oder API-Implementierung",
+        "Keine aktuelle Hands-on-Entwicklung im Tagesgeschäft",
+        "Keine Erfahrung mit Streamlit, Git, Docker oder React",
+        "Unklar, ob technische Grundkenntnisse ausreichend für Full-Stack-Entwicklung vorhanden sind"
+      ],
+      "seniority_estimate": "Senior (im Projektmanagement), aber nicht in technischer Entwicklung",
+      "ai_fit_score": 2,
+      "ai_score_reasoning": "Der Kandidat erfüllt die weichen Anforderungen (Kommunikation, Projektmanagement) und hat Grundverständnis von Cloud, fehlt jedoch vollständig an den technischen Kernkompetenzen (Python, SQL, API, Streamlit), die für die Position als Full-Stack-Entwickler essenziell sind. Die Rolle erfordert aktive Entwicklung, während der Kandidat keine praktische Entwicklungserfahrung nachweist.",
+      "interview_questions": {
+        "technical": [
+          "Können Sie Beispiele für Ihre praktische Erfahrung mit Python, SQL oder API-Implementierung nennen?",
+          "Haben Sie jemals mit Streamlit gearbeitet oder ähnliche Web-Frameworks genutzt?",
+          "Wie würden Sie Ihre Kenntnisse in Docker und React einschätzen?"
+        ],
+        "experience_based": [
+          "Wie haben Sie in früheren Rollen technische Entscheidungen mit Entwicklungsteams abgestimmt?",
+          "Können Sie ein Projekt beschreiben, bei dem Sie direkt an der technischen Umsetzung beteiligt waren?",
+          "Wie gehen Sie vor, wenn Sie technische Anforderungen an Entwickler kommunizieren?"
+        ],
+        "clarification": [
+          "Warum interessieren Sie sich für eine Full-Stack-Entwicklerrolle, obwohl Ihre Erfahrung primär im Projektmanagement liegt?",
+          "Wie würden Sie Ihre technischen Fähigkeiten aktualisieren, um die Anforderungen zu erfüllen?",
+          "Haben Sie Pläne, Ihre technischen Kenntnisse in Python, SQL oder APIs aufzubauen?"
+        ]
+      },
+      "evidence": [
+        "Keine belegte Praxis in Python, SQL, API-Implementierung oder Docker",
+        "Grundverständnis Cloud-Transformation",
+        "Projektmanagement, Scrum, Kommunikation, Dokumentation"
+      ],
+      "risk_notes": [
+        "Hohes Risiko: Kandidat erfüllt keine der technischen Muss-Kriterien",
+        "Rolle erfordert aktive Entwicklung, Kandidat hat keine aktuelle Hands-on-Erfahrung",
+        "Möglicher Mismatch zwischen Kandidatenprofil und technischen Anforderungen"
+      ],
+      "human_review_recommendation": "Nicht empfohlen für die technische Rolle, es sei denn, der Kandidat kann nachweisen, dass er die technischen Anforderungen schnell erfüllen kann. Alternativ könnte er für eine Projektmanagement-Rolle in Betracht gezogen werden."
+    },
+    "metadata": {
+      "used_ai": true,
+      "analysis_mode": "KI-gestützt",
+      "fallback_reason": "",
+      "model": "openrouter/owl-alpha"
+    }
+  },
+  {
+    "file_name": "john_doe.pdf",
+    "candidate_name": "John Doe",
+    "parsed_document": {
+      "file_name": "john_doe.pdf",
+      "text": "Lebenslauf - John Doe\nE-Mail: john.doe@example.com\nPROFIL\nBerufseinsteiger im Bereich Webentwicklung. Erste Erfahrungen in HTML, CSS und JavaScript aus\nBootcamp-Projekten. Sucht eine Einstiegsposition, um praktische Kenntnisse aufzubauen.\nBERUFSERFAHRUNG\n09/2025 - 03/2026: Web Development Bootcamp Teilnehmer\n- Aufbau von Frontend-Projekten mit HTML, CSS und JavaScript\n- Grundlagen von Git\n- Erste Erfahrungen mit kleinen Skripten in Python\nKOMPETENZEN & SKILLS\n- Sprachen: JavaScript, HTML, CSS, Grundlagen Python\n- Tools: Git, VS Code\n- Soft Skills: Lernbereitschaft, Motivation",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "Git"
+      ],
+      "missing_must_have": [
+        "API",
+        "SQL"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 582
+    },
+    "score": {
+      "total_score": 26.3,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 13.3,
+          "max_points": 40.0,
+          "explanation": "1 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 5.0,
+          "max_points": 20.0,
+          "explanation": "1 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 5.0,
+          "max_points": 10.0,
+          "explanation": "Senioritaet nicht eindeutig belegt; neutraler Zwischenwert."
+        },
+        {
+          "name": "KI-semantische Bewertung",
+          "points": 3.0,
+          "max_points": 10.0,
+          "explanation": "Strukturierte KI-Einschaetzung, sofern verfuegbar."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score plus optionale KI-Einschaetzung."
+    },
+    "ai_analysis": {
+      "candidate_name": "John Doe",
+      "candidate_summary": "Berufseinsteiger im Bereich Webentwicklung mit Grundlagen in HTML, CSS, JavaScript und Python aus einem Bootcamp. Bisher keine berufliche Projekterfahrung außerhalb des Bootcamps.",
+      "detected_skills": {
+        "technical": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Python (Grundlagen)",
+          "SQL (nicht explizit genannt, aber als Lernziel erwähnt)"
+        ],
+        "tools": [
+          "Git",
+          "VS Code"
+        ],
+        "soft_skills": [
+          "Lernbereitschaft",
+          "Motivation"
+        ]
+      },
+      "experience_summary": "Keine formale Berufserfahrung; Teilnahme an einem Web Development Bootcamp (09/2025–03/2026), in dem grundlegende Frontend-Technologien und erste Python-Skripte erlernt wurden. Keine dokumentierte Erfahrung mit APIs, Streamlit, Docker, React oder Cloud-Diensten.",
+      "matched_requirements": {
+        "must_have": [
+          "Python"
+        ],
+        "nice_to_have": [],
+        "keywords": [
+          "Git"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Keine nachweisliche Erfahrung mit APIs",
+        "Keine Erfahrung mit Streamlit",
+        "Keine Erfahrung mit SQL (nur als mögliches Lernziel impliziert)",
+        "Keine Erfahrung mit Docker, React oder Cloud-Technologien",
+        "Keine dokumentierte strukturierte Kommunikation oder Projektmanagement-Erfahrung"
+      ],
+      "strengths": [
+        "Grundlegende Python-Kenntnisse vorhanden",
+        "Kenntnisse in Git",
+        "Hohe Lernbereitschaft und Motivation"
+      ],
+      "weaknesses_or_open_questions": [
+        "Keine praktische Erfahrung mit APIs oder Backend-Entwicklung",
+        "Streamlit nicht erwähnt – unklar, ob bekannt oder erprobt",
+        "SQL-Kenntnisse nicht explizit belegt",
+        "Keine Erfahrung mit Docker, React oder Cloud",
+        "Keine nachweisliche Erfahrung in eigenverantwortlicher Projektarbeit oder Dokumentation"
+      ],
+      "seniority_estimate": "Junior / Berufseinsteiger",
+      "ai_fit_score": 3,
+      "ai_score_reasoning": "Der Kandidat erfüllt nur eines der drei Muss-Kriterien (Python) und ein Keyword (Git). Wichtige Anforderungen wie API-Erfahrung, Streamlit und SQL fehlen vollständig. Docker, React und Cloud sind ebenfalls nicht vorhanden. Obwohl Lernbereitschaft positiv ist, fehlen die Kernkompetenzen für das beschriebene Full-Stack-Projekt erheblich.",
+      "interview_questions": {
+        "technical": [
+          "Kannst du ein Beispiel für ein Python-Skript geben, das du im Bootcamp geschrieben hast?",
+          "Hast du schon einmal mit APIs gearbeitet – z. B. eine REST-API aufgerufen oder erstellt?",
+          "Was weißt du über Streamlit? Hast du es schon genutzt?",
+          "Wie würdest du eine einfache SQL-Abfrage strukturieren?"
+        ],
+        "experience_based": [
+          "Beschreibe ein Projekt aus deinem Bootcamp, bei dem du eigenverantwortlich gearbeitet hast.",
+          "Wie gehst du vor, wenn du eine neue Technologie lernen musst?",
+          "Wie dokumentierst du deine Code-Projekte?"
+        ],
+        "clarification": [
+          "Wie schätzt du deine Python-Kenntnisse ein – reichen sie für ein Full-Stack-Projekt?",
+          "Hast du außerhalb des Bootcamps an eigenen Projekten gearbeitet?",
+          "Was verstehst du unter strukturierter Kommunikation in einem Team?"
+        ]
+      },
+      "evidence": [
+        "Python: 'Erste Erfahrungen mit kleinen Skripten in Python'",
+        "Git: 'Grundlagen von Git' und 'Tools: Git'",
+        "Keine Erwähnung von APIs, Streamlit, SQL, Docker, React oder Cloud"
+      ],
+      "risk_notes": [
+        "Hohe Lernkurve erforderlich, um alle Muss-Kriterien zu erfüllen",
+        "Keine nachweisliche Erfahrung mit Backend- oder Full-Stack-Entwicklung",
+        "Projekterfahrung ausschließlich im Bildungskontext"
+      ],
+      "human_review_recommendation": "Nur geeignet, wenn das Unternehmen bereit ist, intensive Einarbeitung anzubieten. Für ein eigenverantwortliches Full-Stack-Projekt mit den genannten Technologien aktuell unterqualifiziert. Ggf. als Junior mit Mentoring in Betracht ziehen."
+    },
+    "metadata": {
+      "used_ai": true,
+      "analysis_mode": "KI-gestützt",
+      "fallback_reason": "",
+      "model": "openrouter/owl-alpha"
+    }
+  },
+  {
+    "file_name": "scan_ohne_text.pdf",
+    "candidate_name": "Scan Ohne Text",
+    "parsed_document": {
+      "file_name": "scan_ohne_text.pdf",
+      "text": "",
+      "page_count": 1,
+      "is_empty": true,
+      "warnings": [
+        "No readable text found. The PDF may be scanned or empty."
+      ]
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [],
+      "missing_must_have": [
+        "Python",
+        "API",
+        "SQL"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 0
+    },
+    "score": {
+      "total_score": 0.0,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 0.0,
+          "max_points": 40.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 0.0,
+          "max_points": 10.0,
+          "explanation": "Keine auswertbaren Textinformationen gefunden."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "Scan Ohne Text",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für Scan Ohne Text: 0/3 Muss-Kriterien, 0/3 Wunsch-Kriterien und 0 zusätzliche Keyword-Treffer erkannt. Grund: PDF enthält keinen lesbaren Text.",
+      "detected_skills": {
+        "technical": [],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [],
+        "nice_to_have": [],
+        "keywords": []
+      },
+      "missing_or_unclear_requirements": [
+        "Python",
+        "API",
+        "SQL",
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "strengths": [],
+      "weaknesses_or_open_questions": [
+        "Nicht im Lebenslauf gefunden oder unklar: Python",
+        "Nicht im Lebenslauf gefunden oder unklar: API",
+        "Nicht im Lebenslauf gefunden oder unklar: SQL",
+        "Nicht im Lebenslauf gefunden oder unklar: Docker",
+        "Nicht im Lebenslauf gefunden oder unklar: React",
+        "Nicht im Lebenslauf gefunden oder unklar: Cloud"
+      ],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "PDF enthält keinen lesbaren Text.",
+      "interview_questions": {
+        "technical": [],
+        "experience_based": [],
+        "clarification": [
+          "Können Sie konkrete Projekterfahrung zu Python nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu API nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu SQL nachreichen?"
+        ]
+      },
+      "evidence": [],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "PDF enthält keinen lesbaren Text.",
+      "model": ""
+    }
+  }
+]

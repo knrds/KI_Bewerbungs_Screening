@@ -1,0 +1,1407 @@
+[
+  {
+    "file_name": "max_mustermann.pdf",
+    "candidate_name": "Max Mustermann",
+    "parsed_document": {
+      "file_name": "max_mustermann.pdf",
+      "text": "Lebenslauf - Max Mustermann\nAnschrift: Musterstraße 12, 12345 Musterstadt\nE-Mail: max.mustermann@example.com\nTelefon: +49 170 1234567\nPROFIL\nErfahrener Senior Full-Stack Developer mit über 6 Jahren Berufserfahrung (6+ years experience) im\nEntwurf und der Entwicklung komplexer Webanwendungen. Expertise in Python, robusten\nREST-APIs, SQL-Datenbanken und modernen Frontend-Technologien. Starke\nKommunikationsfähigkeiten und Erfahrung in agilen Teams.\nBERUFSERFAHRUNG\n01/2022 - Heute: Senior Full-Stack Entwickler bei Tech Solutions GmbH\n- Entwurf und Entwicklung von Microservices mit Python und FastAPI\n- Design von Datenbankarchitekturen unter Verwendung von SQL (PostgreSQL)\n- Konzeptionierung und Anbindung von sicheren REST APIs\n- Orchestrierung und Bereitstellung mittels Docker in der AWS Cloud (Amazon Web Services)\n- Enge Zusammenarbeit und strukturierte Kommunikation im Scrum-Team\n08/2019 - 12/2021: Softwareentwickler bei SoftDev AG\n- Entwicklung von Webanwendungen unter Verwendung von Python und Django\n- Erstellung von Frontends mit React und TypeScript\n- Verwaltung von Versionskontrolle mit Git\nKOMPETENZEN & SKILLS\n- Sprachen: Python, JavaScript, TypeScript, SQL\n- Frameworks & Tools: React.js, Django, FastAPI, Docker, Git\n- Cloud & Infrastruktur: AWS, REST API, PostgreSQL\n- Soft Skills: Kommunikation, Teamfähigkeit, Agile Methoden",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "api"
+          ]
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "docker"
+          ]
+        },
+        {
+          "term": "React",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "react",
+            "react.js"
+          ]
+        },
+        {
+          "term": "Cloud",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "cloud"
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "kommunikation"
+          ]
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "API",
+        "SQL",
+        "Docker",
+        "React",
+        "Cloud",
+        "Git",
+        "Communication"
+      ],
+      "missing_must_have": [],
+      "missing_nice_to_have": [],
+      "text_length": 1351
+    },
+    "score": {
+      "total_score": 88.9,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 40.0,
+          "max_points": 40.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 20.0,
+          "max_points": 20.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 10.0,
+          "max_points": 20.0,
+          "explanation": "2 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 10.0,
+          "max_points": 10.0,
+          "explanation": "Senioritaetshinweise im Lebenslauf gefunden."
+        }
+      ],
+      "recommendation": "Hohe Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "Max Mustermann",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für Max Mustermann: 3/3 Muss-Kriterien, 3/3 Wunsch-Kriterien und 2 zusätzliche Keyword-Treffer erkannt. Grund: Kein OpenRouter API-Key hinterlegt.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "API",
+          "SQL",
+          "Docker",
+          "React",
+          "Cloud",
+          "Git",
+          "Communication"
+        ],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "API",
+          "SQL"
+        ],
+        "nice_to_have": [
+          "Docker",
+          "React",
+          "Cloud"
+        ],
+        "keywords": [
+          "Git",
+          "Communication"
+        ]
+      },
+      "missing_or_unclear_requirements": [],
+      "strengths": [
+        "Erfülltes Muss-Kriterium: Python",
+        "Erfülltes Muss-Kriterium: API",
+        "Erfülltes Muss-Kriterium: SQL",
+        "Zusätzlicher positiver Treffer: Docker",
+        "Zusätzlicher positiver Treffer: React",
+        "Zusätzlicher positiver Treffer: Cloud"
+      ],
+      "weaknesses_or_open_questions": [],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "Kein OpenRouter API-Key hinterlegt.",
+      "interview_questions": {
+        "technical": [
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit Python.",
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit API.",
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit SQL."
+        ],
+        "experience_based": [],
+        "clarification": []
+      },
+      "evidence": [
+        "Keyword-Match: Python",
+        "Keyword-Match: API",
+        "Keyword-Match: SQL",
+        "Keyword-Match: Docker",
+        "Keyword-Match: React",
+        "Keyword-Match: Cloud",
+        "Keyword-Match: Git",
+        "Keyword-Match: Communication"
+      ],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "Kein OpenRouter API-Key hinterlegt.",
+      "model": ""
+    }
+  },
+  {
+    "file_name": "lea_synonym_match.pdf",
+    "candidate_name": "Lea Synonym Match",
+    "parsed_document": {
+      "file_name": "lea_synonym_match.pdf",
+      "text": "Lebenslauf - Lea Synonym Match\nE-Mail: lea.synonym@example.com\nPROFIL\nFull-Stack Engineer mit 5 Jahren Erfahrung in Produktteams. Schwerpunkt auf Python-Services,\nPostgreSQL,\nRESTful API Design, Docker und Frontend-Implementierung mit React.js. Cloud-Projekte wurden\nüberwiegend\nauf Amazon Web Services umgesetzt.\nBERUFSERFAHRUNG\n04/2022 - Heute: Full-Stack Engineer bei ProductLab GmbH\n- Entwicklung von Python Backend Services\n- Aufbau von RESTful API Endpunkten und Integrationen\n- Arbeit mit PostgreSQL und SQL-Datenbanken\n- Deployment via Docker Container auf Amazon Web Services\n- UI-Komponenten mit React.js und TypeScript\n- Versionskontrolle mit Git\nKOMPETENZEN & SKILLS\n- Python, PostgreSQL, RESTful API, React.js, TypeScript\n- Docker, Amazon Web Services, Git\n- Kommunikation, technische Dokumentation",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "api"
+          ]
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "docker",
+            "container"
+          ]
+        },
+        {
+          "term": "React",
+          "found": true,
+          "count": 6,
+          "matched_terms": [
+            "react",
+            "react.js"
+          ]
+        },
+        {
+          "term": "Cloud",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "cloud"
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "kommunikation"
+          ]
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "API",
+        "SQL",
+        "Docker",
+        "React",
+        "Cloud",
+        "Git",
+        "Communication"
+      ],
+      "missing_must_have": [],
+      "missing_nice_to_have": [],
+      "text_length": 811
+    },
+    "score": {
+      "total_score": 88.9,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 40.0,
+          "max_points": 40.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 20.0,
+          "max_points": 20.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 10.0,
+          "max_points": 20.0,
+          "explanation": "2 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 10.0,
+          "max_points": 10.0,
+          "explanation": "5 Jahre Erfahrung erkannt."
+        }
+      ],
+      "recommendation": "Hohe Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "Lea Synonym Match",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für Lea Synonym Match: 3/3 Muss-Kriterien, 3/3 Wunsch-Kriterien und 2 zusätzliche Keyword-Treffer erkannt. Grund: Kein OpenRouter API-Key hinterlegt.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "API",
+          "SQL",
+          "Docker",
+          "React",
+          "Cloud",
+          "Git",
+          "Communication"
+        ],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "API",
+          "SQL"
+        ],
+        "nice_to_have": [
+          "Docker",
+          "React",
+          "Cloud"
+        ],
+        "keywords": [
+          "Git",
+          "Communication"
+        ]
+      },
+      "missing_or_unclear_requirements": [],
+      "strengths": [
+        "Erfülltes Muss-Kriterium: Python",
+        "Erfülltes Muss-Kriterium: API",
+        "Erfülltes Muss-Kriterium: SQL",
+        "Zusätzlicher positiver Treffer: Docker",
+        "Zusätzlicher positiver Treffer: React",
+        "Zusätzlicher positiver Treffer: Cloud"
+      ],
+      "weaknesses_or_open_questions": [],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "Kein OpenRouter API-Key hinterlegt.",
+      "interview_questions": {
+        "technical": [
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit Python.",
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit API.",
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit SQL."
+        ],
+        "experience_based": [],
+        "clarification": []
+      },
+      "evidence": [
+        "Keyword-Match: Python",
+        "Keyword-Match: API",
+        "Keyword-Match: SQL",
+        "Keyword-Match: Docker",
+        "Keyword-Match: React",
+        "Keyword-Match: Cloud",
+        "Keyword-Match: Git",
+        "Keyword-Match: Communication"
+      ],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "Kein OpenRouter API-Key hinterlegt.",
+      "model": ""
+    }
+  },
+  {
+    "file_name": "erika_musterfrau.pdf",
+    "candidate_name": "Erika Musterfrau",
+    "parsed_document": {
+      "file_name": "erika_musterfrau.pdf",
+      "text": "Lebenslauf - Erika Musterfrau\nAnschrift: Hauptstraße 45, 54321 Stadt\nE-Mail: erika.musterfrau@example.com\nPROFIL\nEngagierte Softwareentwicklerin mit 3 Jahren Berufserfahrung (3 years experience) in der\nBackendentwicklung mit Python und SQL. Fokus auf Datenverarbeitung und\nSchnittstellen-Entwicklung (APIs). Sehr eigenverantwortliche Arbeitsweise und gute\nDokumentationspraxis.\nBERUFSERFAHRUNG\n03/2023 - Heute: Backend-Entwicklerin bei DataCorp GmbH\n- Entwicklung von Datenpipelines in Python\n- Optimierung von SQL-Datenbankabfragen\n- Erstellung von API-Schnittstellen (REST API)\n- Dokumentation technischer Workflows\n01/2021 - 02/2023: Junior Developer bei CodeBase GmbH\n- Unterstützung bei der Entwicklung interner Tools mit Python\n- Pflege von Git-Repositories\n- Schnittstellentests\nKOMPETENZEN & SKILLS\n- Sprachen: Python, SQL, HTML, CSS\n- Frameworks & Tools: Django, Git\n- Sonstiges: REST API, SQL Server\n- Soft Skills: Eigenverantwortung, saubere Dokumentation",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "api"
+          ]
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 4,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "API",
+        "SQL",
+        "Git"
+      ],
+      "missing_must_have": [],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 966
+    },
+    "score": {
+      "total_score": 56.7,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 40.0,
+          "max_points": 40.0,
+          "explanation": "3 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 5.0,
+          "max_points": 20.0,
+          "explanation": "1 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 6.0,
+          "max_points": 10.0,
+          "explanation": "3 Jahre Erfahrung erkannt."
+        }
+      ],
+      "recommendation": "Manuell pruefen, mehrere offene Punkte",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "Erika Musterfrau",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für Erika Musterfrau: 3/3 Muss-Kriterien, 0/3 Wunsch-Kriterien und 1 zusätzliche Keyword-Treffer erkannt. Grund: Kein OpenRouter API-Key hinterlegt.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "API",
+          "SQL",
+          "Git"
+        ],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "API",
+          "SQL"
+        ],
+        "nice_to_have": [],
+        "keywords": [
+          "Git"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "strengths": [
+        "Erfülltes Muss-Kriterium: Python",
+        "Erfülltes Muss-Kriterium: API",
+        "Erfülltes Muss-Kriterium: SQL",
+        "Zusätzlicher positiver Treffer: Git"
+      ],
+      "weaknesses_or_open_questions": [
+        "Nicht im Lebenslauf gefunden oder unklar: Docker",
+        "Nicht im Lebenslauf gefunden oder unklar: React",
+        "Nicht im Lebenslauf gefunden oder unklar: Cloud"
+      ],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "Kein OpenRouter API-Key hinterlegt.",
+      "interview_questions": {
+        "technical": [
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit Python.",
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit API.",
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit SQL."
+        ],
+        "experience_based": [],
+        "clarification": [
+          "Können Sie konkrete Projekterfahrung zu Docker nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu React nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu Cloud nachreichen?"
+        ]
+      },
+      "evidence": [
+        "Keyword-Match: Python",
+        "Keyword-Match: API",
+        "Keyword-Match: SQL",
+        "Keyword-Match: Git"
+      ],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "Kein OpenRouter API-Key hinterlegt.",
+      "model": ""
+    }
+  },
+  {
+    "file_name": "nina_data_analyst.pdf",
+    "candidate_name": "Nina Data Analyst",
+    "parsed_document": {
+      "file_name": "nina_data_analyst.pdf",
+      "text": "Lebenslauf - Nina Data Analyst\nE-Mail: nina.data@example.com\nPROFIL\nData Analyst mit 4 Jahren Berufserfahrung in Reporting, Datenmodellierung und Automatisierung.\nSehr sicher in SQL und Python, aber ohne belegte Erfahrung mit REST API Entwicklung oder\nReact.\nBERUFSERFAHRUNG\n07/2021 - Heute: Data Analyst bei Insight Analytics GmbH\n- Datenanalyse und Automatisierung mit Python\n- Aufbau von Dashboards und SQL-Abfragen\n- Datenmodellierung in relationalen Datenbanken\n- Nutzung von Git für Analyse-Skripte\nKOMPETENZEN & SKILLS\n- Python, SQL, Git, Dokumentation\n- Tableau, Excel, Data Warehousing\n- Keine Docker-, React- oder Cloud-Projekterfahrung im Lebenslauf gefunden",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "sql"
+          ]
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "SQL",
+        "Git"
+      ],
+      "missing_must_have": [
+        "API"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 669
+    },
+    "score": {
+      "total_score": 41.9,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 26.7,
+          "max_points": 40.0,
+          "explanation": "2 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 5.0,
+          "max_points": 20.0,
+          "explanation": "1 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 6.0,
+          "max_points": 10.0,
+          "explanation": "4 Jahre Erfahrung erkannt."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "Nina Data Analyst",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für Nina Data Analyst: 2/3 Muss-Kriterien, 0/3 Wunsch-Kriterien und 1 zusätzliche Keyword-Treffer erkannt. Grund: Kein OpenRouter API-Key hinterlegt.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "SQL",
+          "Git"
+        ],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [
+          "Python",
+          "SQL"
+        ],
+        "nice_to_have": [],
+        "keywords": [
+          "Git"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "API",
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "strengths": [
+        "Erfülltes Muss-Kriterium: Python",
+        "Erfülltes Muss-Kriterium: SQL",
+        "Zusätzlicher positiver Treffer: Git"
+      ],
+      "weaknesses_or_open_questions": [
+        "Nicht im Lebenslauf gefunden oder unklar: API",
+        "Nicht im Lebenslauf gefunden oder unklar: Docker",
+        "Nicht im Lebenslauf gefunden oder unklar: React",
+        "Nicht im Lebenslauf gefunden oder unklar: Cloud"
+      ],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "Kein OpenRouter API-Key hinterlegt.",
+      "interview_questions": {
+        "technical": [
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit Python.",
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit SQL."
+        ],
+        "experience_based": [],
+        "clarification": [
+          "Können Sie konkrete Projekterfahrung zu API nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu Docker nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu React nachreichen?"
+        ]
+      },
+      "evidence": [
+        "Keyword-Match: Python",
+        "Keyword-Match: SQL",
+        "Keyword-Match: Git"
+      ],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "Kein OpenRouter API-Key hinterlegt.",
+      "model": ""
+    }
+  },
+  {
+    "file_name": "otto_manager_profile.pdf",
+    "candidate_name": "Otto Manager Profile",
+    "parsed_document": {
+      "file_name": "otto_manager_profile.pdf",
+      "text": "Lebenslauf - Otto Manager Profile\nE-Mail: otto.manager@example.com\nPROFIL\nProjektleiter und Delivery Manager mit 10+ Jahren Berufserfahrung in Softwareprojekten. Sehr stark\nin\nKommunikation, Stakeholder-Management, Budgetplanung und Projektmanagement. Keine aktuelle\nHands-on\nEntwicklung im Tagesgeschäft.\nBERUFSERFAHRUNG\n01/2018 - Heute: IT-Projektleiter bei Enterprise Solutions AG\n- Steuerung agiler Teams und externer Dienstleister\n- Projektmanagement, Risikomanagement und Reporting\n- Moderation von Scrum Events\n- Abstimmung technischer Architekturentscheidungen mit Entwicklungsteams\nKOMPETENZEN & SKILLS\n- Projektmanagement, Scrum, Kommunikation, Dokumentation\n- Grundverständnis Cloud-Transformation\n- Keine belegte Praxis in Python, SQL, API-Implementierung oder Docker",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": true,
+          "count": 1,
+          "matched_terms": [
+            "cloud"
+          ]
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Communication",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "kommunikation"
+          ]
+        },
+        {
+          "term": "Project management",
+          "found": true,
+          "count": 3,
+          "matched_terms": [
+            "projektmanagement"
+          ]
+        }
+      ],
+      "detected_skills": [
+        "Cloud",
+        "Communication",
+        "Project management"
+      ],
+      "missing_must_have": [
+        "Python",
+        "API",
+        "SQL"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React"
+      ],
+      "text_length": 779
+    },
+    "score": {
+      "total_score": 29.7,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 0.0,
+          "max_points": 40.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 6.7,
+          "max_points": 20.0,
+          "explanation": "1 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 10.0,
+          "max_points": 20.0,
+          "explanation": "2 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 10.0,
+          "max_points": 10.0,
+          "explanation": "10 Jahre Erfahrung erkannt."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "Otto Manager Profile",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für Otto Manager Profile: 0/3 Muss-Kriterien, 1/3 Wunsch-Kriterien und 2 zusätzliche Keyword-Treffer erkannt. Grund: Kein OpenRouter API-Key hinterlegt.",
+      "detected_skills": {
+        "technical": [
+          "Cloud",
+          "Communication",
+          "Project management"
+        ],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [],
+        "nice_to_have": [
+          "Cloud"
+        ],
+        "keywords": [
+          "Communication",
+          "Project management"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "Python",
+        "API",
+        "SQL",
+        "Docker",
+        "React"
+      ],
+      "strengths": [
+        "Zusätzlicher positiver Treffer: Cloud",
+        "Zusätzlicher positiver Treffer: Communication",
+        "Zusätzlicher positiver Treffer: Project management"
+      ],
+      "weaknesses_or_open_questions": [
+        "Nicht im Lebenslauf gefunden oder unklar: Python",
+        "Nicht im Lebenslauf gefunden oder unklar: API",
+        "Nicht im Lebenslauf gefunden oder unklar: SQL",
+        "Nicht im Lebenslauf gefunden oder unklar: Docker",
+        "Nicht im Lebenslauf gefunden oder unklar: React"
+      ],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "Kein OpenRouter API-Key hinterlegt.",
+      "interview_questions": {
+        "technical": [
+          "Wie haben Sie Communication bisher praktisch eingesetzt?"
+        ],
+        "experience_based": [],
+        "clarification": [
+          "Können Sie konkrete Projekterfahrung zu Python nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu API nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu SQL nachreichen?"
+        ]
+      },
+      "evidence": [
+        "Keyword-Match: Cloud",
+        "Keyword-Match: Communication",
+        "Keyword-Match: Project management"
+      ],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "Kein OpenRouter API-Key hinterlegt.",
+      "model": ""
+    }
+  },
+  {
+    "file_name": "john_doe.pdf",
+    "candidate_name": "John Doe",
+    "parsed_document": {
+      "file_name": "john_doe.pdf",
+      "text": "Lebenslauf - John Doe\nE-Mail: john.doe@example.com\nPROFIL\nBerufseinsteiger im Bereich Webentwicklung. Erste Erfahrungen in HTML, CSS und JavaScript aus\nBootcamp-Projekten. Sucht eine Einstiegsposition, um praktische Kenntnisse aufzubauen.\nBERUFSERFAHRUNG\n09/2025 - 03/2026: Web Development Bootcamp Teilnehmer\n- Aufbau von Frontend-Projekten mit HTML, CSS und JavaScript\n- Grundlagen von Git\n- Erste Erfahrungen mit kleinen Skripten in Python\nKOMPETENZEN & SKILLS\n- Sprachen: JavaScript, HTML, CSS, Grundlagen Python\n- Tools: Git, VS Code\n- Soft Skills: Lernbereitschaft, Motivation",
+      "page_count": 1,
+      "is_empty": false,
+      "warnings": []
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "python"
+          ]
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": true,
+          "count": 2,
+          "matched_terms": [
+            "git"
+          ]
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [
+        "Python",
+        "Git"
+      ],
+      "missing_must_have": [
+        "API",
+        "SQL"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 582
+    },
+    "score": {
+      "total_score": 25.9,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 13.3,
+          "max_points": 40.0,
+          "explanation": "1 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 5.0,
+          "max_points": 20.0,
+          "explanation": "1 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 5.0,
+          "max_points": 10.0,
+          "explanation": "Senioritaet nicht eindeutig belegt; neutraler Zwischenwert."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "John Doe",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für John Doe: 1/3 Muss-Kriterien, 0/3 Wunsch-Kriterien und 1 zusätzliche Keyword-Treffer erkannt. Grund: Kein OpenRouter API-Key hinterlegt.",
+      "detected_skills": {
+        "technical": [
+          "Python",
+          "Git"
+        ],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [
+          "Python"
+        ],
+        "nice_to_have": [],
+        "keywords": [
+          "Git"
+        ]
+      },
+      "missing_or_unclear_requirements": [
+        "API",
+        "SQL",
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "strengths": [
+        "Erfülltes Muss-Kriterium: Python",
+        "Zusätzlicher positiver Treffer: Git"
+      ],
+      "weaknesses_or_open_questions": [
+        "Nicht im Lebenslauf gefunden oder unklar: API",
+        "Nicht im Lebenslauf gefunden oder unklar: SQL",
+        "Nicht im Lebenslauf gefunden oder unklar: Docker",
+        "Nicht im Lebenslauf gefunden oder unklar: React",
+        "Nicht im Lebenslauf gefunden oder unklar: Cloud"
+      ],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "Kein OpenRouter API-Key hinterlegt.",
+      "interview_questions": {
+        "technical": [
+          "Bitte erläutern Sie Ihre praktische Erfahrung mit Python."
+        ],
+        "experience_based": [],
+        "clarification": [
+          "Können Sie konkrete Projekterfahrung zu API nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu SQL nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu Docker nachreichen?"
+        ]
+      },
+      "evidence": [
+        "Keyword-Match: Python",
+        "Keyword-Match: Git"
+      ],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "Kein OpenRouter API-Key hinterlegt.",
+      "model": ""
+    }
+  },
+  {
+    "file_name": "scan_ohne_text.pdf",
+    "candidate_name": "Scan Ohne Text",
+    "parsed_document": {
+      "file_name": "scan_ohne_text.pdf",
+      "text": "",
+      "page_count": 1,
+      "is_empty": true,
+      "warnings": [
+        "No readable text found. The PDF may be scanned or empty."
+      ]
+    },
+    "keyword_match": {
+      "must_have": [
+        {
+          "term": "Python",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "API",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "SQL",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "nice_to_have": [
+        {
+          "term": "Docker",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "React",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Cloud",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "keywords": [
+        {
+          "term": "Streamlit",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Git",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Communication",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        },
+        {
+          "term": "Project management",
+          "found": false,
+          "count": 0,
+          "matched_terms": []
+        }
+      ],
+      "detected_skills": [],
+      "missing_must_have": [
+        "Python",
+        "API",
+        "SQL"
+      ],
+      "missing_nice_to_have": [
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "text_length": 0
+    },
+    "score": {
+      "total_score": 0.0,
+      "components": [
+        {
+          "name": "Muss-Kriterien",
+          "points": 0.0,
+          "max_points": 40.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Wunsch-Kriterien",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 3 Treffern gefunden."
+        },
+        {
+          "name": "Keyword-/Skill-Match",
+          "points": 0.0,
+          "max_points": 20.0,
+          "explanation": "0 von 4 Treffern gefunden."
+        },
+        {
+          "name": "Berufserfahrung / Senioritaet",
+          "points": 0.0,
+          "max_points": 10.0,
+          "explanation": "Keine auswertbaren Textinformationen gefunden."
+        }
+      ],
+      "recommendation": "Niedrigere Prioritaet fuer manuelle Pruefung",
+      "explanation": "Regelbasierter Score ohne KI-Anteil. Die verfuegbaren Regelpunkte wurden auf 100 skaliert."
+    },
+    "ai_analysis": {
+      "candidate_name": "Scan Ohne Text",
+      "candidate_summary": "Regelbasierte Fallback-Analyse für Scan Ohne Text: 0/3 Muss-Kriterien, 0/3 Wunsch-Kriterien und 0 zusätzliche Keyword-Treffer erkannt. Grund: PDF enthält keinen lesbaren Text.",
+      "detected_skills": {
+        "technical": [],
+        "tools": [],
+        "soft_skills": []
+      },
+      "experience_summary": "",
+      "matched_requirements": {
+        "must_have": [],
+        "nice_to_have": [],
+        "keywords": []
+      },
+      "missing_or_unclear_requirements": [
+        "Python",
+        "API",
+        "SQL",
+        "Docker",
+        "React",
+        "Cloud"
+      ],
+      "strengths": [],
+      "weaknesses_or_open_questions": [
+        "Nicht im Lebenslauf gefunden oder unklar: Python",
+        "Nicht im Lebenslauf gefunden oder unklar: API",
+        "Nicht im Lebenslauf gefunden oder unklar: SQL",
+        "Nicht im Lebenslauf gefunden oder unklar: Docker",
+        "Nicht im Lebenslauf gefunden oder unklar: React",
+        "Nicht im Lebenslauf gefunden oder unklar: Cloud"
+      ],
+      "seniority_estimate": "",
+      "ai_fit_score": 0,
+      "ai_score_reasoning": "PDF enthält keinen lesbaren Text.",
+      "interview_questions": {
+        "technical": [],
+        "experience_based": [],
+        "clarification": [
+          "Können Sie konkrete Projekterfahrung zu Python nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu API nachreichen?",
+          "Können Sie konkrete Projekterfahrung zu SQL nachreichen?"
+        ]
+      },
+      "evidence": [],
+      "risk_notes": [],
+      "human_review_recommendation": "Manuelle Prüfung auf Basis der regelbasierten Treffer empfohlen."
+    },
+    "metadata": {
+      "used_ai": false,
+      "analysis_mode": "Fallback",
+      "fallback_reason": "PDF enthält keinen lesbaren Text.",
+      "model": ""
+    }
+  }
+]

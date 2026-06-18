@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 try:
+    # pyrefly: ignore [missing-import]
     import fitz
 except ImportError as e:
     raise ImportError(
@@ -19,7 +20,6 @@ def create_pdf(filename: str, content: str) -> None:
     page = doc.new_page()
     rect = fitz.Rect(50, 50, 550, 750)
     page.insert_textbox(rect, content, fontsize=11, fontname="helv")
-    
     # Ensure directory exists
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     doc.save(filename)
