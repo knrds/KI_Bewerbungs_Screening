@@ -16,6 +16,10 @@ DEFAULT_MODEL = os.getenv("OPENROUTER_MODEL", "moonshotai/kimi-k2.6:free")
 
 MODEL_OPTIONS = [
     "moonshotai/kimi-k2.6:free",
+    "openrouter/owl-alpha",
+    "nvidia/nemotron-3-ultra-550b-a55b:free",
+    "nex-agi/nex-n2-pro:free",
+    "poolside/laguna-m.1:free",
     "openrouter/free",
     "anthropic/claude-sonnet-4",
     "openai/gpt-4.1",

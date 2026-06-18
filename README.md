@@ -48,6 +48,14 @@ OPENROUTER_API_KEY=sk-or-...
 OPENROUTER_MODEL=moonshotai/kimi-k2.6:free
 ```
 
+In der App-Auswahl sind mehrere kostenlose OpenRouter-Modelle vorbereitet:
+
+- `moonshotai/kimi-k2.6:free`
+- `openrouter/owl-alpha`
+- `nvidia/nemotron-3-ultra-550b-a55b:free`
+- `nex-agi/nex-n2-pro:free`
+- `poolside/laguna-m.1:free`
+
 ## Tests
 
 ```bash
