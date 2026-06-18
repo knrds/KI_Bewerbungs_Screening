@@ -14,6 +14,7 @@ from config import (
     MODEL_OPTIONS,
     ScoreWeights,
     get_openrouter_api_key,
+    resolve_model_choice,
 )
 from export_utils import export_json, export_markdown
 from keyword_matcher import match_candidate_text, split_terms
@@ -117,6 +118,7 @@ def init_session_state() -> None:
         "api_key_input": "",
         "model_choice": DEFAULT_MODEL,
         "custom_model_choice": "",
+        "settings_saved_message": "",
         "show_api_key": False,
         "score_weights": {
             "must_have": 40,
@@ -973,9 +975,10 @@ def render_sidebar() -> None:
 
 
 def get_runtime_settings() -> dict:
-    selected_model = st.session_state.get("custom_model_choice", "").strip()
-    if not selected_model:
-        selected_model = st.session_state.get("model_choice", DEFAULT_MODEL)
+    selected_model = resolve_model_choice(
+        model_choice=st.session_state.get("model_choice", DEFAULT_MODEL),
+        custom_model_choice=st.session_state.get("custom_model_choice", ""),
+    )
 
     api_key = get_openrouter_api_key(st.session_state.get("api_key_input", ""))
     weights_dict = st.session_state["score_weights"]
@@ -1103,33 +1106,55 @@ def render_settings_page(settings: dict) -> None:
     with left:
         with st.container(border=True):
             st.markdown(section_title("key", "API Settings"), unsafe_allow_html=True)
+            if st.session_state.get("settings_saved_message"):
+                st.success(st.session_state["settings_saved_message"])
+                st.session_state["settings_saved_message"] = ""
+
+            st.markdown(
+                f'<span class="pill pill-info">Aktives Modell: {html_escape(settings["selected_model"])}</span>',
+                unsafe_allow_html=True,
+            )
+            if not settings["api_active"]:
+                st.caption("Kein API-Key aktiv: Es wird kein OpenRouter-Modell aufgerufen, die Analyse nutzt den Fallback.")
+
             st.checkbox("API-Key anzeigen", key="show_api_key")
-            st.text_input(
-                "OpenRouter API Key",
-                key="api_key_input",
-                type="default" if st.session_state["show_api_key"] else "password",
-                placeholder="sk-or-v1-...",
-                help="Der Key wird nur in der laufenden Session verwendet oder aus der .env-Datei gelesen.",
-            )
-            st.selectbox(
-                "Standard-Modell",
-                MODEL_OPTIONS,
-                key="model_choice",
-                index=MODEL_OPTIONS.index(st.session_state["model_choice"])
-                if st.session_state["model_choice"] in MODEL_OPTIONS
-                else 0,
-            )
-            st.text_input(
-                "Anderes Modell (Modell-ID)",
-                key="custom_model_choice",
-                placeholder="z.B. google/gemini-2.5-pro",
-            )
-            st.caption("Standardmodell für KI-Analysen. Andere OpenRouter-Modell-IDs können manuell eingetragen werden.")
+            with st.form("ai_settings_form"):
+                st.text_input(
+                    "OpenRouter API Key",
+                    key="api_key_input",
+                    type="default" if st.session_state["show_api_key"] else "password",
+                    placeholder="sk-or-v1-...",
+                    help="Der Key wird nur in der laufenden Session verwendet oder aus der .env-Datei gelesen.",
+                )
+                st.selectbox(
+                    "Standard-Modell",
+                    MODEL_OPTIONS,
+                    key="model_choice",
+                    index=MODEL_OPTIONS.index(st.session_state["model_choice"])
+                    if st.session_state["model_choice"] in MODEL_OPTIONS
+                    else 0,
+                )
+                st.text_input(
+                    "Anderes Modell (Modell-ID)",
+                    key="custom_model_choice",
+                    placeholder="z.B. openrouter/owl-alpha",
+                )
+                submitted = st.form_submit_button("KI-Einstellungen speichern", type="primary", use_container_width=True)
+
+            if submitted:
+                active_model = resolve_model_choice(
+                    model_choice=st.session_state["model_choice"],
+                    custom_model_choice=st.session_state["custom_model_choice"],
+                )
+                st.session_state["settings_saved_message"] = f"KI-Einstellungen gespeichert. Aktives Modell: {active_model}"
+                st.rerun()
+
+            st.caption("Andere OpenRouter-Modell-IDs können manuell eingetragen werden und überschreiben die Auswahl.")
 
         with st.container(border=True):
             st.markdown(section_title("tune", "Systemlogik"), unsafe_allow_html=True)
             st.toggle("KI-Analyse verwenden", key="use_ai")
-            st.caption("Aktiviert das OpenRouter-Modell für Zusammenfassungen, Begründungen und Interviewfragen.")
+            st.caption("Aktiviert das gespeicherte OpenRouter-Modell, sofern ein API-Key vorhanden ist.")
             st.toggle("Fallback-Scoring aktivieren", key="fallback_enabled")
             st.caption("Nutzt PDF-Parsing, Keyword-Matching und regelbasiertes Scoring bei fehlender oder fehlerhafter KI.")
 

@@ -56,6 +56,8 @@ In der App-Auswahl sind mehrere kostenlose OpenRouter-Modelle vorbereitet:
 - `nex-agi/nex-n2-pro:free`
 - `poolside/laguna-m.1:free`
 
+Die Auswahl wird ueber `KI-Einstellungen speichern` uebernommen. Ohne aktiven API-Key wird kein OpenRouter-Modell aufgerufen; die App zeigt dann bewusst den Fallback-Modus an.
+
 ## Tests
 
 ```bash

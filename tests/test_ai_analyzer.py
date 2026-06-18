@@ -97,9 +97,11 @@ def test_analyze_resume_success(mocker) -> None:
         job_description="We need a Python developer.",
         match_result=match_result,
         api_key="valid-key",
+        model="openrouter/owl-alpha",
     )
 
     assert mock_post.called
+    assert mock_post.call_args.kwargs["json"]["model"] == "openrouter/owl-alpha"
     assert result.candidate_name == "Test Candidate"
     assert result.ai_fit_score == 9
     assert result.detected_skills.technical == ["Python", "FastAPI"]

@@ -26,6 +26,18 @@ MODEL_OPTIONS = [
     "google/gemini-2.5-pro",
 ]
 
+
+def resolve_model_choice(
+    model_choice: str | None = None,
+    custom_model_choice: str | None = None,
+) -> str:
+    custom_model = (custom_model_choice or "").strip()
+    if custom_model:
+        return custom_model
+
+    selected_model = (model_choice or "").strip()
+    return selected_model or DEFAULT_MODEL
+
 SENSITIVE_ATTRIBUTES = [
     "age",
     "gender",
