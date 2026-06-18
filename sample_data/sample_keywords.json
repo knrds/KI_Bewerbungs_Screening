@@ -1,0 +1,18 @@
+{
+  "must_have": [
+    "Python",
+    "API",
+    "SQL"
+  ],
+  "nice_to_have": [
+    "Docker",
+    "React",
+    "Cloud"
+  ],
+  "keywords": [
+    "Streamlit",
+    "Git",
+    "Communication",
+    "Project management"
+  ]
+}

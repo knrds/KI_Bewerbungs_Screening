@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dashboard - AI Resume Screening</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#360f00",
+                        "error-container": "#ffdad6",
+                        "tertiary": "#943700",
+                        "on-secondary-fixed": "#0b1c30",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-variant": "#e1e2ed",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#434655",
+                        "secondary-container": "#d0e1fb",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "surface-container": "#ededf9",
+                        "surface-container-low": "#f3f3fe",
+                        "outline": "#737686",
+                        "primary": "#004ac6",
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdbcd",
+                        "background": "#faf8ff",
+                        "on-secondary-container": "#54647a",
+                        "on-surface": "#191b23",
+                        "primary-fixed-dim": "#b4c5ff",
+                        "surface-container-high": "#e7e7f3",
+                        "inverse-primary": "#b4c5ff",
+                        "on-tertiary-container": "#ffede6",
+                        "secondary": "#505f76",
+                        "outline-variant": "#c3c6d7",
+                        "inverse-surface": "#2e3039",
+                        "on-primary-container": "#eeefff",
+                        "inverse-on-surface": "#f0f0fb",
+                        "on-primary-fixed": "#00174b",
+                        "secondary-fixed": "#d3e4fe",
+                        "tertiary-fixed-dim": "#ffb596",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#0053db",
+                        "on-primary-fixed-variant": "#003ea8",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#faf8ff",
+                        "surface-dim": "#d9d9e5",
+                        "tertiary-container": "#bc4800",
+                        "on-tertiary-fixed-variant": "#7d2d00",
+                        "surface": "#faf8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e1e2ed",
+                        "primary-container": "#2563eb",
+                        "on-background": "#191b23"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "24px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "container-max-width": "1440px",
+                        "margin-desktop": "32px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-base": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+                        "body-base": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: var(--tw-colors-outline-variant);
+            border-radius: 20px;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-base text-body-base antialiased flex">
+<!-- SideNavBar (Shared Component) -->
+<nav class="h-screen w-64 fixed left-0 top-0 bg-surface border-r border-outline-variant shadow-sm flex flex-col py-stack-lg z-50">
+<!-- Header -->
+<div class="px-6 mb-8 flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg overflow-hidden bg-primary-container shrink-0">
+<img alt="HR Manager Avatar" class="w-full h-full object-cover" data-alt="A professional 3D rendered avatar of a modern HR Manager. The avatar is rendered in a minimalist corporate style with soft lighting against a plain, light background. The overall aesthetic is clean, trustworthy, and matches a high-end enterprise software UI." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbFjRT8o7hpMYIbhkxDYbFrlNLJnflyn9FyRjeo3oGm6ORPSU0EelCEc3UKzdOm5jctdcimvKDjqloQexghvvsMGVbxVKB8xMmrWTItim85yorKh73WI8zdTl8Eu4MYo8n86ILu9rjy5cDLksHmGv2G5G9bgj9OmJLAZCXMaypi0-Yy_tPEw30T-pGQaIWkO6EwzBc-lHCvhN3TzBGt_0Zxm6dias8StcgTT2QvMZ4DZ82KwcHl9DSXRYTB0jhiOHaL3vNJtE0BPI"/>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md font-bold text-primary truncate">HR AI Tool</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Modern HR Solutions</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 overflow-y-auto custom-scrollbar px-3 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-primary font-bold border-r-4 border-primary bg-surface-container hover:bg-surface-container transition-colors scale-[0.98] duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-label-md text-label-md">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+<span class="font-label-md text-label-md">Bewerbungen hochladen</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">format_list_numbered</span>
+<span class="font-label-md text-label-md">Ranking</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">analytics</span>
+<span class="font-label-md text-label-md">Kandidatenanalyse</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="font-label-md text-label-md">Einstellungen</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">ios_share</span>
+<span class="font-label-md text-label-md">Export</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="ml-64 flex-1 flex flex-col min-h-screen">
+<!-- TopNavBar (Shared Component) -->
+<header class="docked full-width top-0 sticky z-40 bg-surface-container-lowest border-b border-outline-variant shadow-sm transition-all duration-200">
+<div class="flex justify-between items-center h-16 px-margin-desktop">
+<div class="flex items-center gap-4">
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">AI Resume Screening</h2>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden"></span> <!-- search_bar: hidden -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">OpenRouter Modell</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-sm text-label-sm font-medium">API Status: Aktiv</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Dashboard Content -->
+<div class="flex-1 p-margin-desktop max-w-container-max-width mx-auto w-full space-y-stack-lg">
+<!-- Metrics Row (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">description</span>
+</div>
+<span class="inline-flex items-center gap-1 text-green-600 bg-green-50 px-2 py-1 rounded-md font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +12%
+                        </span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Analysierte Bewerbungen</p>
+<p class="font-headline-lg text-headline-lg text-on-surface">124</p>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-secondary-container/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Durchschnittlicher Fit Score</p>
+<p class="font-headline-lg text-headline-lg text-on-surface">72%</p>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-shadow relative overflow-hidden">
+<div class="absolute right-0 top-0 w-24 h-24 bg-primary/5 rounded-bl-full -z-10"></div>
+<div class="flex items-start justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-tertiary-container/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Top-Kandidat</p>
+<p class="font-headline-md text-headline-md text-on-surface">Max Mustermann</p>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-[0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] transition-shadow">
+<div class="flex items-start justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-error-container/30 flex items-center justify-center text-error">
+<span class="material-symbols-outlined">warning</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Fehlende Muss-Kriterien</p>
+<p class="font-headline-lg text-headline-lg text-on-surface">12%</p>
+</div>
+</div>
+<!-- Upload & Input Card -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-6 shadow-[0_4px_12px_rgba(0,0,0,0.04)]">
+<h3 class="font-headline-md text-headline-md font-semibold mb-6">Neues Screening Starten</h3>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Left: Upload -->
+<div>
+<div class="border-2 border-dashed border-outline-variant rounded-xl p-8 flex flex-col items-center justify-center text-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer min-h-[240px]">
+<div class="w-16 h-16 rounded-full bg-primary-container/20 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface mb-1">PDF Lebensläufe hier ablegen</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">oder klicken um Dateien auszuwählen</p>
+</div>
+</div>
+<!-- Right: Criteria -->
+<div class="space-y-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">Stellenbeschreibung (Optional)</label>
+<textarea class="w-full rounded-lg border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary text-body-sm p-3 h-24 resize-none" placeholder="Fügen Sie hier die Stellenbeschreibung ein..."></textarea>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">Muss-Kriterien</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary text-body-sm p-2.5 mb-2" placeholder="z.B. React, Deutsch C1" type="text"/>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1 bg-surface-container px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant border border-outline-variant">
+                                        React <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-surface-container px-2.5 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant border border-outline-variant">
+                                        TypeScript <span class="material-symbols-outlined text-[14px] cursor-pointer hover:text-error">close</span>
+</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2">Wunsch-Kriterien</label>
+<input class="w-full rounded-lg border-outline-variant bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary text-body-sm p-2.5 mb-2" placeholder="z.B. GraphQL, Docker" type="text"/>
+</div>
+</div>
+<div class="pt-4 flex justify-end">
+<button class="bg-primary hover:bg-primary/90 text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-lg flex items-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+                                Bewerbungen analysieren
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Layout: Table + Detail Panel -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Candidate Ranking Table -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_12px_rgba(0,0,0,0.04)] overflow-hidden flex flex-col h-[600px]">
+<div class="p-4 border-b border-outline-variant bg-surface-container-low flex justify-between items-center">
+<h3 class="font-headline-md text-headline-md font-semibold">Ranking</h3>
+<button class="text-on-surface-variant hover:text-primary transition-colors p-1 rounded-md hover:bg-surface-container">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+<div class="flex-1 overflow-auto custom-scrollbar">
+<table class="w-full text-left border-collapse">
+<thead class="sticky top-0 bg-surface-container-lowest z-10 border-b border-outline-variant">
+<tr>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wider uppercase">Rang</th>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wider uppercase">Bewerber</th>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wider uppercase">Fit Score</th>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wider uppercase">Status</th>
+<th class="py-3 px-4 font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wider uppercase text-right">Aktion</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/50">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer bg-primary/5">
+<td class="py-3 px-4">
+<div class="w-8 h-8 rounded-full bg-tertiary-container/10 text-tertiary flex items-center justify-center font-label-md font-bold">1</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-label-md text-label-md text-on-surface">Max Mustermann</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Senior Frontend Dev</div>
+</td>
+<td class="py-3 px-4 w-48">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-primary font-bold">92%</span>
+<div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-green-50 text-green-700 font-label-sm text-label-sm border border-green-200">
+                                            Hohe Priorität
+                                        </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="text-primary hover:text-primary-fixed-variant p-1 rounded-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="py-3 px-4">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-md font-bold">2</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-label-md text-label-md text-on-surface">Anna Schmidt</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Fullstack Engineer</div>
+</td>
+<td class="py-3 px-4 w-48">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-on-surface font-bold">85%</span>
+<div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary/70 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm border border-outline-variant">
+                                            Geeignet
+                                        </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="text-on-surface-variant hover:text-primary p-1 rounded-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer">
+<td class="py-3 px-4">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-md font-bold">3</div>
+</td>
+<td class="py-3 px-4">
+<div class="font-label-md text-label-md text-on-surface">Lukas Weber</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Frontend Developer</div>
+</td>
+<td class="py-3 px-4 w-48">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-on-surface font-bold">68%</span>
+<div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 68%"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-yellow-50 text-yellow-700 font-label-sm text-label-sm border border-yellow-200">
+                                            Manuell prüfen
+                                        </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="text-on-surface-variant hover:text-primary p-1 rounded-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Candidate Detail Panel -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_12px_rgba(0,0,0,0.04)] p-6 h-[600px] overflow-y-auto custom-scrollbar">
+<div class="flex items-start justify-between mb-6">
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Max Mustermann</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Berlin, DE
+                            </p>
+</div>
+<div class="w-14 h-14 rounded-full border-4 border-primary flex items-center justify-center relative">
+<span class="font-label-md font-bold text-primary">92</span>
+</div>
+</div>
+<div class="space-y-6">
+<!-- Summary -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-2">KI-Zusammenfassung</h4>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+                                Sehr starker Kandidat mit 6 Jahren Erfahrung in React und modernem Frontend-Ökosystem. Übertrifft die Anforderungen an Architekturverständnis.
+                            </p>
+</div>
+<!-- Match Grid -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-green-50/50 p-3 rounded-lg border border-green-100">
+<h4 class="font-label-sm text-label-sm text-green-800 mb-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Matched Skills
+                                </h4>
+<ul class="font-body-sm text-body-sm text-green-900 space-y-1">
+<li>• React (Expert)</li>
+<li>• TypeScript</li>
+<li>• System Design</li>
+</ul>
+</div>
+<div class="bg-yellow-50/50 p-3 rounded-lg border border-yellow-100">
+<h4 class="font-label-sm text-label-sm text-yellow-800 mb-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Fehlend / Schwach
+                                </h4>
+<ul class="font-body-sm text-body-sm text-yellow-900 space-y-1">
+<li>• Docker (Grundlagen)</li>
+<li>• CI/CD Setup</li>
+</ul>
+</div>
+</div>
+<!-- Interview Questions -->
+<div>
+<h4 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-2">Empfohlene Interview-Fragen</h4>
+<div class="bg-surface-container-low rounded-lg p-4 border border-outline-variant space-y-3">
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-primary">1.</span> Wie würden Sie das Caching-Setup in einer großen React-Applikation optimieren, die Sie in Projekt X erwähnt haben?
+                                </p>
+<p class="font-body-sm text-body-sm text-on-surface">
+<span class="font-medium text-primary">2.</span> Da Ihre Docker-Erfahrung grundlegend ist: Wie würden Sie sich in unser bestehendes Container-Setup einarbeiten?
+                                </p>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-4 border-t border-outline-variant flex gap-3">
+<button class="flex-1 bg-primary hover:bg-primary/90 text-on-primary font-label-md py-2 rounded-lg transition-colors text-center">
+                                Einladen
+                            </button>
+<button class="flex-1 border border-outline-variant text-on-surface hover:bg-surface-container font-label-md py-2 rounded-lg transition-colors text-center">
+                                Absagen
+                            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Compliance Footer -->
+<div class="bg-surface-container-low border border-outline-variant rounded-lg p-4 mt-8 flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface-variant mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Dieses Tool unterstützt nur die strukturierte Voranalyse. Die finale Entscheidung trifft immer ein Mensch entsprechend den Compliance-Richtlinien.
+                </p>
+</div>
+</div>
+</main>
+</body></html>

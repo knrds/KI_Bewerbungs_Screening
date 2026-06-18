@@ -1,0 +1,4 @@
+Wir suchen eine Person fuer ein kleines Full-Stack-Projekt mit Python,
+Streamlit, SQL-Grundkenntnissen und Erfahrung mit APIs. Docker, React und
+Cloud-Erfahrung sind ein Plus. Wichtig sind strukturierte Kommunikation,
+Eigenverantwortung und saubere Dokumentation.
