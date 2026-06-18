@@ -17,6 +17,14 @@ def create_pdf(filename: str, content: str) -> None:
     doc.close()
 
 
+def create_blank_pdf(filename: str) -> None:
+    doc = fitz.open()
+    doc.new_page()
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    doc.save(filename)
+    doc.close()
+
+
 def generate_all() -> None:
     base_dir = Path(__file__).parent
     
@@ -103,6 +111,86 @@ def generate_all() -> None:
     """
     create_pdf(str(base_dir / "john_doe.pdf"), doe_content)
     print("Created john_doe.pdf")
+
+    # 4. Lea Synonym Match (strong fit, tests synonym matching)
+    synonym_content = """
+    Lebenslauf - Lea Synonym Match
+    E-Mail: lea.synonym@example.com
+
+    PROFIL
+    Full-Stack Engineer mit 5 Jahren Erfahrung in Produktteams. Schwerpunkt auf Python-Services, PostgreSQL,
+    RESTful API Design, Docker und Frontend-Implementierung mit React.js. Cloud-Projekte wurden überwiegend
+    auf Amazon Web Services umgesetzt.
+
+    BERUFSERFAHRUNG
+    04/2022 - Heute: Full-Stack Engineer bei ProductLab GmbH
+    - Entwicklung von Python Backend Services
+    - Aufbau von RESTful API Endpunkten und Integrationen
+    - Arbeit mit PostgreSQL und SQL-Datenbanken
+    - Deployment via Docker Container auf Amazon Web Services
+    - UI-Komponenten mit React.js und TypeScript
+    - Versionskontrolle mit Git
+
+    KOMPETENZEN & SKILLS
+    - Python, PostgreSQL, RESTful API, React.js, TypeScript
+    - Docker, Amazon Web Services, Git
+    - Kommunikation, technische Dokumentation
+    """
+    create_pdf(str(base_dir / "lea_synonym_match.pdf"), synonym_content)
+    print("Created lea_synonym_match.pdf")
+
+    # 5. Otto Manager Profile (many soft/business signals, weak hands-on match)
+    manager_content = """
+    Lebenslauf - Otto Manager Profile
+    E-Mail: otto.manager@example.com
+
+    PROFIL
+    Projektleiter und Delivery Manager mit 10+ Jahren Berufserfahrung in Softwareprojekten. Sehr stark in
+    Kommunikation, Stakeholder-Management, Budgetplanung und Projektmanagement. Keine aktuelle Hands-on
+    Entwicklung im Tagesgeschäft.
+
+    BERUFSERFAHRUNG
+    01/2018 - Heute: IT-Projektleiter bei Enterprise Solutions AG
+    - Steuerung agiler Teams und externer Dienstleister
+    - Projektmanagement, Risikomanagement und Reporting
+    - Moderation von Scrum Events
+    - Abstimmung technischer Architekturentscheidungen mit Entwicklungsteams
+
+    KOMPETENZEN & SKILLS
+    - Projektmanagement, Scrum, Kommunikation, Dokumentation
+    - Grundverständnis Cloud-Transformation
+    - Keine belegte Praxis in Python, SQL, API-Implementierung oder Docker
+    """
+    create_pdf(str(base_dir / "otto_manager_profile.pdf"), manager_content)
+    print("Created otto_manager_profile.pdf")
+
+    # 6. Nina Data Analyst (partial backend fit, missing web stack)
+    analyst_content = """
+    Lebenslauf - Nina Data Analyst
+    E-Mail: nina.data@example.com
+
+    PROFIL
+    Data Analyst mit 4 Jahren Berufserfahrung in Reporting, Datenmodellierung und Automatisierung.
+    Sehr sicher in SQL und Python, aber ohne belegte Erfahrung mit REST API Entwicklung oder React.
+
+    BERUFSERFAHRUNG
+    07/2021 - Heute: Data Analyst bei Insight Analytics GmbH
+    - Datenanalyse und Automatisierung mit Python
+    - Aufbau von Dashboards und SQL-Abfragen
+    - Datenmodellierung in relationalen Datenbanken
+    - Nutzung von Git für Analyse-Skripte
+
+    KOMPETENZEN & SKILLS
+    - Python, SQL, Git, Dokumentation
+    - Tableau, Excel, Data Warehousing
+    - Keine Docker-, React- oder Cloud-Projekterfahrung im Lebenslauf gefunden
+    """
+    create_pdf(str(base_dir / "nina_data_analyst.pdf"), analyst_content)
+    print("Created nina_data_analyst.pdf")
+
+    # 7. Blank / scanned-style placeholder (tests empty PDF handling)
+    create_blank_pdf(str(base_dir / "scan_ohne_text.pdf"))
+    print("Created scan_ohne_text.pdf")
 
 
 if __name__ == "__main__":

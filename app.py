@@ -27,6 +27,10 @@ DEMO_RESUME_FILES = [
     Path("sample_data/fake_resumes/max_mustermann.pdf"),
     Path("sample_data/fake_resumes/erika_musterfrau.pdf"),
     Path("sample_data/fake_resumes/john_doe.pdf"),
+    Path("sample_data/fake_resumes/lea_synonym_match.pdf"),
+    Path("sample_data/fake_resumes/otto_manager_profile.pdf"),
+    Path("sample_data/fake_resumes/nina_data_analyst.pdf"),
+    Path("sample_data/fake_resumes/scan_ohne_text.pdf"),
 ]
 
 PAGES = [
@@ -68,6 +72,7 @@ def main() -> None:
     )
     inject_design_css()
     init_session_state()
+    apply_pending_navigation()
 
     if not st.session_state["seen_intro"]:
         show_intro_dialog()
@@ -96,6 +101,7 @@ def main() -> None:
 def init_session_state() -> None:
     defaults = {
         "active_page": "Dashboard",
+        "pending_page": None,
         "seen_intro": False,
         "job_desc": "",
         "must_have": "",
@@ -126,6 +132,19 @@ def init_session_state() -> None:
     }
     for key, value in defaults.items():
         st.session_state.setdefault(key, value)
+
+
+def apply_pending_navigation() -> None:
+    pending_page = st.session_state.get("pending_page")
+    if pending_page in PAGES:
+        st.session_state["active_page"] = pending_page
+    st.session_state["pending_page"] = None
+
+
+def navigate_to(page: str) -> None:
+    if page not in PAGES:
+        return
+    st.session_state["pending_page"] = page
 
 
 def inject_design_css() -> None:
@@ -1240,8 +1259,8 @@ def render_dashboard_start_card(
             <div class="demo-title">Prototyp sofort testen</div>
             <div class="demo-copy">
                 Das Demo-Szenario nutzt eine vorbereitete Full-Stack-Stellenbeschreibung,
-                passende Kriterien und drei Beispiel-Lebensläufe. Ohne API-Key läuft es
-                vollständig im regelbasierten Fallback-Modus.
+                passende Kriterien und mehrere Fake-Lebensläufe inklusive Randfällen.
+                Ohne API-Key läuft es vollständig im regelbasierten Fallback-Modus.
             </div>
         </div>
         """,
@@ -1278,7 +1297,7 @@ def render_dashboard_start_card(
             unsafe_allow_html=True,
         )
         if st.button("Eigene PDFs hochladen", use_container_width=True):
-            st.session_state["active_page"] = "Bewerbungen hochladen"
+            navigate_to("Bewerbungen hochladen")
             st.rerun()
 
     with action_cols[2]:
@@ -1292,7 +1311,7 @@ def render_dashboard_start_card(
             unsafe_allow_html=True,
         )
         if st.button("Ranking öffnen", disabled=not evaluations, use_container_width=True):
-            st.session_state["active_page"] = "Ranking"
+            navigate_to("Ranking")
             st.rerun()
 
 
@@ -1425,7 +1444,7 @@ def run_analysis(uploaded_files: list, settings: dict) -> None:
 
     if evaluations:
         status_text.success("Analyse abgeschlossen. Das Ranking wurde aktualisiert.")
-        st.session_state["active_page"] = "Dashboard"
+        navigate_to("Dashboard")
     else:
         status_text.error("Es wurden keine gültigen Auswertungen erzeugt.")
 
@@ -1675,8 +1694,6 @@ def render_ranking_table(evaluations: list[CandidateEvaluation], show_actions: b
                 button_label = "Aktiv" if selected else "Details"
                 if st.button(button_label, key=f"select_{candidate_id(evaluation)}", use_container_width=True):
                     set_selected_candidate(evaluation)
-                    if show_actions:
-                        st.session_state["active_page"] = st.session_state["active_page"]
                     st.rerun()
 
 

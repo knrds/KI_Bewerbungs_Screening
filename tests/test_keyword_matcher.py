@@ -68,6 +68,25 @@ def test_match_candidate_text_synonyms() -> None:
     assert "projektmanagement" in result.keywords[0].matched_terms
 
 
+def test_match_candidate_text_ignores_negated_skills() -> None:
+    text = (
+        "Projektmanager mit starker Kommunikation. "
+        "Keine belegte Praxis in Python, SQL, API-Implementierung oder Docker. "
+        "React nicht vorhanden."
+    )
+
+    result = match_candidate_text(
+        text=text,
+        must_have="Python, SQL, API",
+        nice_to_have="Docker, React",
+        keywords="Kommunikation",
+    )
+
+    assert all(hit.found is False for hit in result.must_have)
+    assert all(hit.found is False for hit in result.nice_to_have)
+    assert result.keywords[0].found is True
+
+
 def test_word_boundaries() -> None:
     # "js" should not match inside "java" or "objspy" or similar
     text = "This is a java script and objective-c codebase."

@@ -107,7 +107,55 @@ def _count_phrase(normalized_text: str, normalized_phrase: str) -> int:
         return 0
 
     pattern = rf"(?<![a-z0-9]){re.escape(normalized_phrase)}(?![a-z0-9])"
-    return len(re.findall(pattern, normalized_text))
+    return sum(
+        1
+        for match in re.finditer(pattern, normalized_text)
+        if not _is_negated_match(normalized_text, match.start(), match.end())
+    )
+
+
+def _is_negated_match(normalized_text: str, start: int, end: int) -> bool:
+    preceding_tokens = normalized_text[:start].split()[-10:]
+    following_tokens = normalized_text[end:].split()[:4]
+    before = " ".join(preceding_tokens)
+    after = " ".join(following_tokens)
+
+    negation_terms = {
+        "kein",
+        "keine",
+        "keinen",
+        "keiner",
+        "ohne",
+        "nicht",
+        "no",
+        "without",
+        "missing",
+    }
+    if any(token in negation_terms for token in preceding_tokens[-4:]):
+        return True
+
+    negative_followups = [
+        "fehlt",
+        "fehlen",
+        "nicht vorhanden",
+        "nicht belegt",
+        "not present",
+        "not proven",
+    ]
+    if any(phrase in after for phrase in negative_followups):
+        return True
+
+    negative_contexts = [
+        "keine praxis",
+        "keine belegte praxis",
+        "keine erfahrung",
+        "keine belegte erfahrung",
+        "ohne erfahrung",
+        "ohne belegte erfahrung",
+        "no experience",
+        "without experience",
+    ]
+    return any(context in before for context in negative_contexts)
 
 
 def _normalize_synonym_map(synonyms: dict[str, list[str]]) -> dict[str, list[str]]:
