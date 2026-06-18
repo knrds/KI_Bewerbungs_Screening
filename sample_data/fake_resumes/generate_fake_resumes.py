@@ -2,7 +2,16 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
-import fitz
+
+try:
+    import fitz
+except ImportError as e:
+    raise ImportError(
+        "PyMuPDF (fitz) konnte nicht geladen werden. Bitte installieren Sie es mit "
+        "'pip install pymupdf'. Falls bereits ein anderes Paket namens 'fitz' installiert "
+        "ist, deinstallieren Sie es zuerst mit 'pip uninstall fitz pymupdf && pip install pymupdf'."
+    ) from e
+
 
 
 def create_pdf(filename: str, content: str) -> None:

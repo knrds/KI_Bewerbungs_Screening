@@ -99,6 +99,36 @@ def main() -> None:
     render_compliance_footer()
 
 
+def sync_persistent_state() -> None:
+    if "persistent_storage" not in st.session_state:
+        st.session_state["persistent_storage"] = {
+            "job_desc": "",
+            "must_have": "",
+            "nice_to_have": "",
+            "keywords": "",
+            "use_ai": True,
+            "fallback_enabled": True,
+            "api_key_input": "",
+            "model_choice": DEFAULT_MODEL,
+            "custom_model_choice": "",
+            "ranking_search": "",
+            "ranking_status_filter": "Alle Status",
+            "ranking_min_score": 0,
+            "show_api_key": False,
+        }
+
+    storage = st.session_state["persistent_storage"]
+
+    # Copy current widget values if they exist in session state to persistent storage
+    for key in storage:
+        if key in st.session_state:
+            storage[key] = st.session_state[key]
+
+    # Populate session state with persistent values
+    for key, val in storage.items():
+        st.session_state[key] = val
+
+
 def init_session_state() -> None:
     defaults = {
         "active_page": "Dashboard",
@@ -134,6 +164,9 @@ def init_session_state() -> None:
     }
     for key, value in defaults.items():
         st.session_state.setdefault(key, value)
+
+    sync_persistent_state()
+
 
 
 def apply_pending_navigation() -> None:
@@ -995,24 +1028,43 @@ def get_runtime_settings() -> dict:
 
 
 def render_topbar(settings: dict) -> None:
-    api_label = "API Status: Aktiv" if settings["api_active"] else "Fallback aktiv"
-    api_class = "pill-success" if settings["api_active"] else "pill-warning"
-    ai_label = "KI-Analyse aktiviert" if settings["use_ai"] and settings["api_active"] else "Regelbasiert"
-    fallback_label = "Fallback bereit" if settings["fallback_enabled"] else "Fallback aus"
+    if settings["use_ai"] and settings["api_active"]:
+        model_label = f"🤖 Modell: {settings['selected_model']}"
+    else:
+        model_label = "🤖 Kein KI-Modell aktiv"
+
+    if settings["api_active"]:
+        api_label = "🔑 OpenRouter: Aktiv"
+        api_class = "pill-success"
+    else:
+        api_label = "🔑 OpenRouter: Nicht konfiguriert"
+        api_class = "pill-warning"
+
+    if settings["use_ai"] and settings["api_active"]:
+        ai_label = "⚙️ Modus: KI-gestützt"
+    else:
+        ai_label = "⚙️ Modus: Regelbasiert"
+
+    if settings["fallback_enabled"]:
+        fallback_label = "🔄 Fallback: Bereit"
+    else:
+        fallback_label = "🔄 Fallback: Aus"
+
     st.markdown(
         f"""
         <div class="app-topbar">
             <div class="topbar-title">AI Resume Screening</div>
             <div class="topbar-pills">
-                <span class="pill"><span class="dot"></span>{html_escape(settings["selected_model"])}</span>
-                <span class="pill {api_class}"><span class="dot"></span>{api_label}</span>
-                <span class="pill pill-info">{ai_label}</span>
-                <span class="pill">{fallback_label}</span>
+                <span class="pill">{html_escape(model_label)}</span>
+                <span class="pill {api_class}">{html_escape(api_label)}</span>
+                <span class="pill pill-info">{html_escape(ai_label)}</span>
+                <span class="pill">{html_escape(fallback_label)}</span>
             </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
+
 
 
 def render_dashboard(settings: dict) -> None:
@@ -1412,11 +1464,12 @@ def render_screening_card(settings: dict, key_prefix: str, expanded: bool = Fals
             can_fallback = settings["fallback_enabled"]
             disabled = not uploaded_files or (not can_use_ai and not can_fallback)
             if not can_use_ai and can_fallback:
-                st.markdown('<span class="pill pill-warning">Fallback aktiv</span>', unsafe_allow_html=True)
+                st.markdown('<span class="pill pill-warning">Modus: Regelbasiert (Fallback)</span>', unsafe_allow_html=True)
             elif can_use_ai:
-                st.markdown('<span class="pill pill-success">KI-Analyse verfügbar</span>', unsafe_allow_html=True)
+                st.markdown('<span class="pill pill-success">Modus: KI-gestützte Analyse</span>', unsafe_allow_html=True)
             else:
                 st.warning("Aktivieren Sie Fallback-Scoring oder hinterlegen Sie einen API-Key.")
+
 
             if st.button(
                 "Bewerbungen analysieren",
@@ -1594,7 +1647,8 @@ def store_analysis_results(
     st.session_state["evaluations"] = sorted_evaluations
     st.session_state["analysis_errors"] = errors
     st.session_state["last_fallback_active"] = fallback_active
-    st.session_state["last_analysis_mode"] = "Fallback aktiv" if fallback_active else "KI-gestützte Analyse"
+    st.session_state["last_analysis_mode"] = "Regelbasiertes Fallback" if fallback_active else "KI-gestützte Analyse"
+
     st.session_state["selected_candidate_id"] = (
         candidate_id(sorted_evaluations[0]) if sorted_evaluations else None
     )
